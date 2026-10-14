@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.gcloud/
+.sdk/
+evidence/
+engagements/
+scope.json
+*.credentials.json
+*.key
+*.pem
+.env
+research/source-cache/

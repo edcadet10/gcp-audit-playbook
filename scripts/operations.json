@@ -1,0 +1,981 @@
+{
+  "assets": {
+    "id": "assets",
+    "title": "Inventory resource configuration",
+    "command": [
+      "asset",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [
+      "--content-type=resource"
+    ],
+    "permission": "cloudasset.assets.listResource",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/list",
+    "description": "Collect supported resource metadata. Reconcile unsupported types, indexing delay and service-native inventories; this is not an authoritative census by itself."
+  },
+  "asset_iam": {
+    "id": "asset_iam",
+    "title": "Inventory resource allow policies",
+    "command": [
+      "asset",
+      "search-all-iam-policies"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "cloudasset.assets.searchAllIamPolicies",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/search-all-iam-policies",
+    "description": "Search allow-policy bindings in the selected project. Does not resolve group membership, ancestor inheritance, deny policies, principal access boundaries or all data-plane ACLs."
+  },
+  "org_assets": {
+    "id": "org_assets",
+    "title": "Reconcile organization project inventory",
+    "command": [
+      "asset",
+      "list"
+    ],
+    "scope": "organization",
+    "flags": [
+      "--content-type=resource",
+      "--asset-types=cloudresourcemanager.googleapis.com/Project,cloudresourcemanager.googleapis.com/Folder"
+    ],
+    "permission": "cloudasset.assets.listResource",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/list",
+    "description": "Reconcile organization project inventory; returns configuration metadata for auditor review."
+  },
+  "org_iam": {
+    "id": "org_iam",
+    "title": "Read organization IAM and audit configuration",
+    "command": [
+      "organizations",
+      "get-iam-policy"
+    ],
+    "scope": "organization",
+    "flags": [],
+    "permission": "resourcemanager.organizations.getIamPolicy",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/organizations/get-iam-policy",
+    "description": "Read organization IAM and audit configuration; returns configuration metadata for auditor review."
+  },
+  "folder_iam": {
+    "id": "folder_iam",
+    "title": "Read ancestor folder IAM and audit configuration",
+    "command": [
+      "resource-manager",
+      "folders",
+      "get-iam-policy"
+    ],
+    "scope": "folder",
+    "flags": [],
+    "permission": "resourcemanager.folders.getIamPolicy",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/resource-manager/folders/get-iam-policy",
+    "description": "Read ancestor folder IAM and audit configuration; returns configuration metadata for auditor review."
+  },
+  "project_iam": {
+    "id": "project_iam",
+    "title": "Read project IAM and audit configuration",
+    "command": [
+      "projects",
+      "get-iam-policy"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "resourcemanager.projects.getIamPolicy",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/get-iam-policy",
+    "description": "Read project IAM and audit configuration; returns configuration metadata for auditor review."
+  },
+  "project": {
+    "id": "project",
+    "title": "Read project identity and lifecycle",
+    "command": [
+      "projects",
+      "describe"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "resourcemanager.projects.get",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/describe",
+    "description": "Read project identity and lifecycle; returns configuration metadata for auditor review."
+  },
+  "services": {
+    "id": "services",
+    "title": "List enabled service APIs",
+    "command": [
+      "services",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [
+      "--enabled"
+    ],
+    "permission": "serviceusage.services.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/services/list",
+    "description": "List enabled service APIs; returns configuration metadata for auditor review."
+  },
+  "org_policies": {
+    "id": "org_policies",
+    "title": "List project organization-policy overrides",
+    "command": [
+      "org-policies",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "orgpolicy.policies.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/org-policies/list",
+    "description": "Lists explicit project policies. Effective inheritance is reviewed separately using the effective_policy operation; an empty list is not unrestricted or compliant by itself."
+  },
+  "effective_policy": {
+    "id": "effective_policy",
+    "title": "Read a selected effective organization policy",
+    "command": [
+      "org-policies",
+      "describe"
+    ],
+    "scope": "constraint",
+    "flags": [
+      "--effective"
+    ],
+    "permission": "orgpolicy.policies.get",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/org-policies/describe",
+    "description": "Read a selected effective organization policy; returns configuration metadata for auditor review."
+  },
+  "org_roles": {
+    "id": "org_roles",
+    "title": "List organization custom roles",
+    "command": [
+      "iam",
+      "roles",
+      "list"
+    ],
+    "scope": "organization",
+    "flags": [],
+    "permission": "iam.roles.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/roles/list",
+    "description": "List organization custom roles; returns configuration metadata for auditor review."
+  },
+  "project_roles": {
+    "id": "project_roles",
+    "title": "List project custom roles",
+    "command": [
+      "iam",
+      "roles",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "iam.roles.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/roles/list",
+    "description": "List project custom roles; returns configuration metadata for auditor review."
+  },
+  "service_accounts": {
+    "id": "service_accounts",
+    "title": "List service account identities",
+    "command": [
+      "iam",
+      "service-accounts",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "iam.serviceAccounts.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list",
+    "description": "List service account identities; returns configuration metadata for auditor review."
+  },
+  "sa_keys": {
+    "id": "sa_keys",
+    "title": "List service account key metadata",
+    "command": [
+      "iam",
+      "service-accounts",
+      "keys",
+      "list"
+    ],
+    "scope": "service_account",
+    "flags": [
+      "--managed-by=user"
+    ],
+    "permission": "iam.serviceAccountKeys.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/list",
+    "description": "List user-managed key IDs, validity and status; never download key material. Google-managed keys are deliberately excluded."
+  },
+  "wif_pools": {
+    "id": "wif_pools",
+    "title": "List workload identity pools",
+    "command": [
+      "iam",
+      "workload-identity-pools",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [
+      "--location=global"
+    ],
+    "permission": "iam.workloadIdentityPools.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/workload-identity-pools/list",
+    "description": "List workload identity pools; returns configuration metadata for auditor review."
+  },
+  "wif_providers": {
+    "id": "wif_providers",
+    "title": "Read workload federation providers",
+    "command": [
+      "iam",
+      "workload-identity-pools",
+      "providers",
+      "list"
+    ],
+    "scope": "pool",
+    "flags": [
+      "--location=global"
+    ],
+    "permission": "iam.workloadIdentityPoolProviders.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/workload-identity-pools/providers/list",
+    "description": "Read workload federation providers; returns configuration metadata for auditor review."
+  },
+  "networks": {
+    "id": "networks",
+    "title": "List VPC networks and peerings",
+    "command": [
+      "compute",
+      "networks",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.networks.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/networks/list",
+    "description": "List VPC networks and peerings; returns configuration metadata for auditor review."
+  },
+  "subnets": {
+    "id": "subnets",
+    "title": "List subnets and private access settings",
+    "command": [
+      "compute",
+      "networks",
+      "subnets",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.subnetworks.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/list",
+    "description": "List subnets and private access settings; returns configuration metadata for auditor review."
+  },
+  "firewalls": {
+    "id": "firewalls",
+    "title": "List VPC firewall rules",
+    "command": [
+      "compute",
+      "firewall-rules",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.firewalls.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/list",
+    "description": "Collect VPC rules including disabled state, logging, priority and targets. Does not calculate effective hierarchical or network firewall policies."
+  },
+  "firewall_policies": {
+    "id": "firewall_policies",
+    "title": "List organization firewall policies",
+    "command": [
+      "compute",
+      "firewall-policies",
+      "list"
+    ],
+    "scope": "organization",
+    "flags": [],
+    "permission": "compute.firewallPolicies.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/firewall-policies/list",
+    "description": "List organization firewall policies; returns configuration metadata for auditor review."
+  },
+  "routes": {
+    "id": "routes",
+    "title": "List VPC routes",
+    "command": [
+      "compute",
+      "routes",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.routes.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/routes/list",
+    "description": "List VPC routes; returns configuration metadata for auditor review."
+  },
+  "routers": {
+    "id": "routers",
+    "title": "List Cloud Routers and NAT configuration",
+    "command": [
+      "compute",
+      "routers",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.routers.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/routers/list",
+    "description": "List Cloud Routers and NAT configuration; returns configuration metadata for auditor review."
+  },
+  "forwarding": {
+    "id": "forwarding",
+    "title": "List forwarding rules",
+    "command": [
+      "compute",
+      "forwarding-rules",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.forwardingRules.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules/list",
+    "description": "List forwarding rules; returns configuration metadata for auditor review."
+  },
+  "backend": {
+    "id": "backend",
+    "title": "List load balancer backend services",
+    "command": [
+      "compute",
+      "backend-services",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.backendServices.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/backend-services/list",
+    "description": "List load balancer backend services; returns configuration metadata for auditor review."
+  },
+  "armor": {
+    "id": "armor",
+    "title": "List Cloud Armor policies",
+    "command": [
+      "compute",
+      "security-policies",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.securityPolicies.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/security-policies/list",
+    "description": "List Cloud Armor policies; returns configuration metadata for auditor review."
+  },
+  "dns": {
+    "id": "dns",
+    "title": "List Cloud DNS managed zones",
+    "command": [
+      "dns",
+      "managed-zones",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "dns.managedZones.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/dns/managed-zones/list",
+    "description": "List Cloud DNS managed zones; returns configuration metadata for auditor review."
+  },
+  "vpn": {
+    "id": "vpn",
+    "title": "List VPN tunnel configuration",
+    "command": [
+      "compute",
+      "vpn-tunnels",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.vpnTunnels.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/vpn-tunnels/list",
+    "description": "List VPN tunnel configuration; returns configuration metadata for auditor review."
+  },
+  "interconnect": {
+    "id": "interconnect",
+    "title": "List Interconnect attachments",
+    "command": [
+      "compute",
+      "interconnects",
+      "attachments",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.interconnectAttachments.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/interconnects/attachments/list",
+    "description": "List Interconnect attachments; returns configuration metadata for auditor review."
+  },
+  "access_policies": {
+    "id": "access_policies",
+    "title": "List Access Context Manager policies",
+    "command": [
+      "access-context-manager",
+      "policies",
+      "list"
+    ],
+    "scope": "organization",
+    "flags": [],
+    "permission": "accesscontextmanager.policies.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/access-context-manager/policies/list",
+    "description": "List Access Context Manager policies; returns configuration metadata for auditor review."
+  },
+  "perimeters": {
+    "id": "perimeters",
+    "title": "List VPC Service Controls perimeters",
+    "command": [
+      "access-context-manager",
+      "perimeters",
+      "list"
+    ],
+    "scope": "access_policy",
+    "flags": [],
+    "permission": "accesscontextmanager.servicePerimeters.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/access-context-manager/perimeters/list",
+    "description": "List VPC Service Controls perimeters; returns configuration metadata for auditor review."
+  },
+  "instances": {
+    "id": "instances",
+    "title": "List Compute Engine instance configuration",
+    "command": [
+      "compute",
+      "instances",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.instances.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/instances/list",
+    "description": "List Compute Engine instance configuration; returns configuration metadata for auditor review."
+  },
+  "disks": {
+    "id": "disks",
+    "title": "List persistent disk configuration",
+    "command": [
+      "compute",
+      "disks",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.disks.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/disks/list",
+    "description": "List persistent disk configuration; returns configuration metadata for auditor review."
+  },
+  "images": {
+    "id": "images",
+    "title": "List project-owned VM images",
+    "command": [
+      "compute",
+      "images",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [
+      "--no-standard-images"
+    ],
+    "permission": "compute.images.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/images/list",
+    "description": "List project-owned VM images; returns configuration metadata for auditor review."
+  },
+  "snapshots": {
+    "id": "snapshots",
+    "title": "List disk snapshot metadata",
+    "command": [
+      "compute",
+      "snapshots",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.snapshots.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/snapshots/list",
+    "description": "List disk snapshot metadata; returns configuration metadata for auditor review."
+  },
+  "schedules": {
+    "id": "schedules",
+    "title": "List regional resource policies",
+    "command": [
+      "compute",
+      "resource-policies",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.resourcePolicies.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/resource-policies/list",
+    "description": "List regional resource policies; returns configuration metadata for auditor review."
+  },
+  "clusters": {
+    "id": "clusters",
+    "title": "List GKE cluster configuration",
+    "command": [
+      "container",
+      "clusters",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "container.clusters.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/container/clusters/list",
+    "description": "Collect control-plane, networking, node and workload identity configuration. Does not inspect live Kubernetes RBAC, workloads, admission results or network-policy enforcement."
+  },
+  "run_services": {
+    "id": "run_services",
+    "title": "List Cloud Run services",
+    "command": [
+      "run",
+      "services",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "run.services.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/run/services/list",
+    "description": "List Cloud Run services; returns configuration metadata for auditor review."
+  },
+  "run_jobs": {
+    "id": "run_jobs",
+    "title": "List Cloud Run jobs",
+    "command": [
+      "run",
+      "jobs",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "run.jobs.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/run/jobs/list",
+    "description": "List Cloud Run jobs; returns configuration metadata for auditor review."
+  },
+  "functions": {
+    "id": "functions",
+    "title": "List Cloud Run functions",
+    "command": [
+      "functions",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "cloudfunctions.functions.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/functions/list",
+    "description": "List Cloud Run functions; returns configuration metadata for auditor review."
+  },
+  "scheduler": {
+    "id": "scheduler",
+    "title": "List Cloud Scheduler jobs",
+    "command": [
+      "scheduler",
+      "jobs",
+      "list"
+    ],
+    "scope": "location",
+    "flags": [],
+    "permission": "cloudscheduler.jobs.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/scheduler/jobs/list",
+    "description": "List Cloud Scheduler jobs; returns configuration metadata for auditor review."
+  },
+  "pubsub_topics": {
+    "id": "pubsub_topics",
+    "title": "List Pub/Sub topic configuration",
+    "command": [
+      "pubsub",
+      "topics",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "pubsub.topics.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/pubsub/topics/list",
+    "description": "List Pub/Sub topic configuration; returns configuration metadata for auditor review."
+  },
+  "pubsub_subs": {
+    "id": "pubsub_subs",
+    "title": "List Pub/Sub subscription configuration",
+    "command": [
+      "pubsub",
+      "subscriptions",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "pubsub.subscriptions.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/pubsub/subscriptions/list",
+    "description": "List Pub/Sub subscription configuration; returns configuration metadata for auditor review."
+  },
+  "buckets": {
+    "id": "buckets",
+    "title": "List Cloud Storage bucket metadata",
+    "command": [
+      "storage",
+      "buckets",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "storage.buckets.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/storage/buckets/list",
+    "description": "Collect bucket controls; never list or read object contents. Object ACL evidence is a separate customer-provided metadata workpaper when uniform access is disabled."
+  },
+  "sql": {
+    "id": "sql",
+    "title": "List Cloud SQL instance configuration",
+    "command": [
+      "sql",
+      "instances",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "cloudsql.instances.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/sql/instances/list",
+    "description": "List Cloud SQL instance configuration; returns configuration metadata for auditor review."
+  },
+  "sql_backups": {
+    "id": "sql_backups",
+    "title": "List existing Cloud SQL backup records",
+    "command": [
+      "sql",
+      "backups",
+      "list"
+    ],
+    "scope": "sql_instance",
+    "flags": [],
+    "permission": "cloudsql.backupRuns.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/sql/backups/list",
+    "description": "List existing Cloud SQL backup records; returns configuration metadata for auditor review."
+  },
+  "spanner": {
+    "id": "spanner",
+    "title": "List Spanner instances",
+    "command": [
+      "spanner",
+      "instances",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "spanner.instances.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/spanner/instances/list",
+    "description": "List Spanner instances; returns configuration metadata for auditor review."
+  },
+  "redis": {
+    "id": "redis",
+    "title": "List Memorystore Redis instances",
+    "command": [
+      "redis",
+      "instances",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "redis.instances.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/redis/instances/list",
+    "description": "List Memorystore Redis instances; returns configuration metadata for auditor review."
+  },
+  "secrets": {
+    "id": "secrets",
+    "title": "List Secret Manager metadata",
+    "command": [
+      "secrets",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "secretmanager.secrets.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/secrets/list",
+    "description": "Read secret configuration only. Secret payload access is not permitted by this collector."
+  },
+  "secret_versions": {
+    "id": "secret_versions",
+    "title": "List secret version metadata",
+    "command": [
+      "secrets",
+      "versions",
+      "list"
+    ],
+    "scope": "secret",
+    "flags": [],
+    "permission": "secretmanager.versions.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/secrets/versions/list",
+    "description": "List secret version metadata; returns configuration metadata for auditor review."
+  },
+  "keyrings": {
+    "id": "keyrings",
+    "title": "List Cloud KMS key rings",
+    "command": [
+      "kms",
+      "keyrings",
+      "list"
+    ],
+    "scope": "location",
+    "flags": [],
+    "permission": "cloudkms.keyRings.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/kms/keyrings/list",
+    "description": "List Cloud KMS key rings; returns configuration metadata for auditor review."
+  },
+  "keys": {
+    "id": "keys",
+    "title": "List cryptographic key configuration",
+    "command": [
+      "kms",
+      "keys",
+      "list"
+    ],
+    "scope": "keyring",
+    "flags": [],
+    "permission": "cloudkms.cryptoKeys.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/kms/keys/list",
+    "description": "List cryptographic key configuration; returns configuration metadata for auditor review."
+  },
+  "sinks": {
+    "id": "sinks",
+    "title": "Read project logging sinks",
+    "command": [
+      "logging",
+      "sinks",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "logging.sinks.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/sinks/list",
+    "description": "Read project logging sinks; returns configuration metadata for auditor review."
+  },
+  "org_sinks": {
+    "id": "org_sinks",
+    "title": "Read organization aggregated logging sinks",
+    "command": [
+      "logging",
+      "sinks",
+      "list"
+    ],
+    "scope": "organization",
+    "flags": [],
+    "permission": "logging.sinks.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/sinks/list",
+    "description": "Read organization aggregated logging sinks; returns configuration metadata for auditor review."
+  },
+  "exclusions": {
+    "id": "exclusions",
+    "title": "Read sink exclusion filters",
+    "command": [
+      "logging",
+      "sinks",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "logging.sinks.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/sinks/list",
+    "description": "Read exclusions embedded in sink configuration, including the _Default sink. The GA CLI does not expose a logging exclusions list command."
+  },
+  "log_buckets": {
+    "id": "log_buckets",
+    "title": "Read regional log bucket retention",
+    "command": [
+      "logging",
+      "buckets",
+      "list"
+    ],
+    "scope": "location",
+    "flags": [],
+    "permission": "logging.buckets.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/buckets/list",
+    "description": "Read regional log bucket retention; returns configuration metadata for auditor review."
+  },
+  "log_metrics": {
+    "id": "log_metrics",
+    "title": "List logs-based metrics",
+    "command": [
+      "logging",
+      "metrics",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "logging.logMetrics.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/metrics/list",
+    "description": "List logs-based metrics; returns configuration metadata for auditor review."
+  },
+  "audit_logs": {
+    "id": "audit_logs",
+    "title": "Sample audit events within the approved window",
+    "command": [
+      "logging",
+      "read"
+    ],
+    "scope": "logs",
+    "flags": [],
+    "permission": "logging.logEntries.list; logging.privateLogEntries.list for Data Access",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/read",
+    "description": "Bounded metadata and payload sample of audit events in an explicit UTC window. Always classified Sampled, or Truncated at the limit; never proof of full event coverage. Logs can contain sensitive values."
+  },
+  "scc": {
+    "id": "scc",
+    "title": "Read Security Command Center findings",
+    "command": [
+      "scc",
+      "findings",
+      "list"
+    ],
+    "scope": "scc",
+    "flags": [],
+    "permission": "securitycenter.findings.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/scc/findings/list",
+    "description": "Read findings for the selected organization and SCC location. Availability depends on activation, location, tier and permissions; an empty response is not a clean bill of health."
+  },
+  "repositories": {
+    "id": "repositories",
+    "title": "List Artifact Registry repositories",
+    "command": [
+      "artifacts",
+      "repositories",
+      "list"
+    ],
+    "scope": "location",
+    "flags": [],
+    "permission": "artifactregistry.repositories.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/artifacts/repositories/list",
+    "description": "List Artifact Registry repositories; returns configuration metadata for auditor review."
+  },
+  "build_triggers": {
+    "id": "build_triggers",
+    "title": "Read Cloud Build triggers",
+    "command": [
+      "builds",
+      "triggers",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "cloudbuild.builds.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/builds/triggers/list",
+    "description": "Read Cloud Build triggers; returns configuration metadata for auditor review."
+  },
+  "builds": {
+    "id": "builds",
+    "title": "Sample existing Cloud Build execution metadata",
+    "command": [
+      "builds",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [
+      "--limit=100"
+    ],
+    "permission": "cloudbuild.builds.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/builds/list",
+    "description": "Bounded sample of the most recent 100 builds; statuses and provenance links require review. Reaching 100 is marked Truncated; fewer is still Sampled."
+  },
+  "deploy": {
+    "id": "deploy",
+    "title": "Read Cloud Deploy delivery pipelines",
+    "command": [
+      "deploy",
+      "delivery-pipelines",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "clouddeploy.deliveryPipelines.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/deploy/delivery-pipelines/list",
+    "description": "Read Cloud Deploy delivery pipelines; returns configuration metadata for auditor review."
+  },
+  "binary": {
+    "id": "binary",
+    "title": "Read Binary Authorization admission policy",
+    "command": [
+      "container",
+      "binauthz",
+      "policy",
+      "export"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "binaryauthorization.policy.get",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/container/binauthz/policy/export",
+    "description": "Despite the verb export, this returns the existing policy to stdout; no --destination or cloud write is used."
+  },
+  "ai_endpoints": {
+    "id": "ai_endpoints",
+    "title": "List Vertex AI endpoints",
+    "command": [
+      "ai",
+      "endpoints",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "aiplatform.endpoints.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/ai/endpoints/list",
+    "description": "List Vertex AI endpoints; returns configuration metadata for auditor review."
+  },
+  "ai_models": {
+    "id": "ai_models",
+    "title": "List Vertex AI model metadata",
+    "command": [
+      "ai",
+      "models",
+      "list"
+    ],
+    "scope": "region",
+    "flags": [],
+    "permission": "aiplatform.models.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/ai/models/list",
+    "description": "List Vertex AI model metadata; returns configuration metadata for auditor review."
+  },
+  "ai_datasets": {
+    "id": "ai_datasets",
+    "title": "Inventory supported Vertex AI dataset metadata",
+    "command": [
+      "asset",
+      "list"
+    ],
+    "scope": "project",
+    "flags": [
+      "--content-type=resource",
+      "--asset-types=aiplatform.googleapis.com/Dataset"
+    ],
+    "permission": "cloudasset.assets.listResource",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/list",
+    "description": "Use Cloud Asset Inventory for supported Vertex AI dataset resources; reconcile with owner-provided native dataset exports and unsupported generative data stores."
+  },
+  "billing_link": {
+    "id": "billing_link",
+    "title": "Read project billing association",
+    "command": [
+      "billing",
+      "projects",
+      "describe"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "billing.resourceAssociations.list / resourcemanager.projects.get as applicable",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/billing/projects/describe",
+    "description": "Read project billing association; returns configuration metadata for auditor review."
+  },
+  "budgets": {
+    "id": "budgets",
+    "title": "List explicitly approved billing budgets",
+    "command": [
+      "billing",
+      "budgets",
+      "list"
+    ],
+    "scope": "billing",
+    "flags": [],
+    "permission": "billing.budgets.list",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/billing/budgets/list",
+    "description": "Billing accounts are separate authorization scopes, not proven by project ancestry. Only explicitly approved billing account IDs are read."
+  },
+  "project_info": {
+    "id": "project_info",
+    "title": "Read Compute project quotas and metadata",
+    "command": [
+      "compute",
+      "project-info",
+      "describe"
+    ],
+    "scope": "project",
+    "flags": [],
+    "permission": "compute.projects.get",
+    "source": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/project-info/describe",
+    "description": "Read Compute project quotas and metadata; returns configuration metadata for auditor review."
+  }
+}

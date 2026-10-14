@@ -1,0 +1,2794 @@
+[
+  {
+    "id": "GOV-01",
+    "domain": "GOV",
+    "title": "Establish organizational ownership and scope",
+    "objective": "Establish organizational ownership and scope",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of governance and scope; document approved exclusions and service absence.",
+    "procedure": "Reconcile organization, folders, project numbers, business owners, lifecycle state and billing inventory with the signed scope. Record separately projects visible to the collector and the expected population.",
+    "criterion": "Every expected project has a disposition, owner and applicable control set; unexplained inventory gaps remain open.",
+    "falsification": "Find one billing-linked or CMDB project absent from the asset export and investigate visibility before declaring it retired.",
+    "required_evidence": [
+      "signed charter",
+      "independent project register",
+      "population reconciliation"
+    ],
+    "operations": [
+      "org_assets",
+      "project",
+      "billing_link"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy",
+      "https://docs.cloud.google.com/asset-inventory/docs/asset-types"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GOV-02",
+    "domain": "GOV",
+    "title": "Allocate shared responsibility",
+    "objective": "Allocate shared responsibility",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of governance and scope; document approved exclusions and service absence.",
+    "procedure": "Map each material service to customer, Google and supplier duties, including data protection, IAM, patching and recovery. Assign evidence owners rather than treating managed services as fully outsourced security.",
+    "criterion": "The responsibility matrix covers all material services and has accountable owners.",
+    "falsification": "Select one managed database and ask who proves database-user review and recoverability.",
+    "required_evidence": [
+      "responsibility matrix",
+      "service-owner approvals"
+    ],
+    "operations": [
+      "services",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/security/shared-responsibility-shared-fate"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GOV-03",
+    "domain": "GOV",
+    "title": "Assess landing-zone design",
+    "objective": "Assess landing-zone design",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of governance and scope; document approved exclusions and service absence.",
+    "procedure": "Compare folder boundaries, production separation, centralized services and deployment ownership against the adopted enterprise foundation design. Trace an approved exception from architecture decision to resource.",
+    "criterion": "Separation and centralized controls meet the documented design or have risk-accepted exceptions.",
+    "falsification": "Look for a production workload in a sandbox project or inherited development administrator access.",
+    "required_evidence": [
+      "architecture diagrams",
+      "design decisions",
+      "exception register"
+    ],
+    "operations": [
+      "org_assets",
+      "org_iam",
+      "folder_iam",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/blueprints/security-foundations",
+      "https://docs.cloud.google.com/architecture/landing-zones/decide-resource-hierarchy"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GOV-04",
+    "domain": "GOV",
+    "title": "Review exceptions and policy ownership",
+    "objective": "Review exceptions and policy ownership",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of governance and scope; document approved exclusions and service absence.",
+    "procedure": "Join policy overrides and IAM changes to the exception register. Verify business justification, accountable approval, expiry, compensating evidence and review dates.",
+    "criterion": "Each material exception has a current owner, time limit and tested compensating control.",
+    "falsification": "Find a locally overridden constraint with no current approval.",
+    "required_evidence": [
+      "exception register",
+      "policy baseline",
+      "review minutes"
+    ],
+    "operations": [
+      "org_policies",
+      "project_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview",
+      "https://docs.cloud.google.com/architecture/framework/security"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GOV-05",
+    "domain": "GOV",
+    "title": "Review project lifecycle and shutdown",
+    "objective": "Review project lifecycle and shutdown",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of governance and scope; document approved exclusions and service absence.",
+    "procedure": "Inspect labels, lifecycle states, enabled services and billing links. Trace creation approval, handover and one past retirement to retained evidence and revoked access.",
+    "criterion": "Creation and retirement records reconcile to inventory without orphaned ownership, data or access.",
+    "falsification": "Select a retired project whose data export, billing liability or service account remains unexplained.",
+    "required_evidence": [
+      "creation and retirement tickets",
+      "retention approvals"
+    ],
+    "operations": [
+      "project",
+      "services",
+      "billing_link",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/creating-managing-projects",
+      "https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "IAM-01",
+    "domain": "IAM",
+    "title": "Resolve inherited privileged access",
+    "objective": "Resolve inherited privileged access",
+    "owner": "Identity and access lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of human identity and privileged access; document approved exclusions and service absence.",
+    "procedure": "Read organization, all ancestor folders, project and resource policies. Expand groups through authorized directory evidence and inspect custom role permissions, conditions, deny and principal boundary policies.",
+    "criterion": "Each effective privileged access path is justified, assigned to an accountable identity and periodically reviewed.",
+    "falsification": "A harmless-looking project policy conceals an organization-level group with broad access; trace a nested member.",
+    "required_evidence": [
+      "group membership export",
+      "effective-access workpaper",
+      "access approvals"
+    ],
+    "operations": [
+      "org_iam",
+      "folder_iam",
+      "project_iam",
+      "asset_iam",
+      "org_roles",
+      "project_roles"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+      "https://docs.cloud.google.com/iam/docs/policy-types",
+      "https://docs.cloud.google.com/iam/docs/conditions-overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "IAM-02",
+    "domain": "IAM",
+    "title": "Assess MFA and identity federation",
+    "objective": "Assess MFA and identity federation",
+    "owner": "Identity and access lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of human identity and privileged access; document approved exclusions and service absence.",
+    "procedure": "Reconcile privileged principals with Cloud Identity, Google Workspace or workforce IdP enforcement exports. Review phishing-resistant factors, federation trust, session policy and exemptions without assuming gcloud IAM proves MFA.",
+    "criterion": "Approved authentication requirements cover human privileged paths and exceptions have independent evidence.",
+    "falsification": "Choose a privileged external principal excluded from the main employee MFA policy.",
+    "required_evidence": [
+      "IdP policy and membership exports",
+      "authentication review"
+    ],
+    "operations": [
+      "project_iam",
+      "org_iam",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/workforce-identity-federation",
+      "https://support.google.com/a/answer/9176657"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "IAM-03",
+    "domain": "IAM",
+    "title": "Review joiner mover leaver controls",
+    "objective": "Review joiner mover leaver controls",
+    "owner": "Identity and access lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of human identity and privileged access; document approved exclusions and service absence.",
+    "procedure": "Join active bindings, external principals and group membership to HR and supplier lifecycle records. Sample terminations and role changes across the review period and inspect actual removal times.",
+    "criterion": "Access changes meet the company's approved service levels and retain evidence of review.",
+    "falsification": "Select an offboarded contractor whose nested group still grants access.",
+    "required_evidence": [
+      "HR sample",
+      "directory membership",
+      "removal tickets"
+    ],
+    "operations": [
+      "asset_iam",
+      "org_iam",
+      "folder_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+      "https://docs.cloud.google.com/iam/docs/groups-in-cloud-console"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "IAM-04",
+    "domain": "IAM",
+    "title": "Review emergency and time-bound privilege",
+    "objective": "Review emergency and time-bound privilege",
+    "owner": "Identity and access lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of human identity and privileged access; document approved exclusions and service absence.",
+    "procedure": "Identify emergency identities, standing roles and privileged-access approval arrangements. Inspect prior emergency exercises, vault access, activation expiry and monitoring records.",
+    "criterion": "Emergency access remains usable under the stated failure scenario and accountable; temporary privilege expires as designed.",
+    "falsification": "Challenge an emergency account dependent on the same unavailable IdP it is intended to bypass.",
+    "required_evidence": [
+      "emergency runbook",
+      "exercise record",
+      "privilege approvals"
+    ],
+    "operations": [
+      "org_iam",
+      "project_iam",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/pam-overview",
+      "https://docs.cloud.google.com/docs/security/best-practices-continuous-access-to-google-cloud"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "IAM-05",
+    "domain": "IAM",
+    "title": "Assess deny and principal access boundaries",
+    "objective": "Assess deny and principal access boundaries",
+    "owner": "Identity and access lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of human identity and privileged access; document approved exclusions and service absence.",
+    "procedure": "Reconcile allow bindings with explicit deny rules, exceptions, principal-set bindings and boundary enforcement versions using resource metadata and owner exports when not inventoried.",
+    "criterion": "Access analysis includes applicable allow, deny and boundary effects; unsupported permission coverage is acknowledged.",
+    "falsification": "Find a boundary that does not cover the permission relied on by the proposed compensating control.",
+    "required_evidence": [
+      "deny and boundary policy export",
+      "principal-set membership",
+      "access analysis"
+    ],
+    "operations": [
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/deny-overview",
+      "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "WID-01",
+    "domain": "WID",
+    "title": "Inventory service account ownership",
+    "objective": "Inventory service account ownership",
+    "owner": "Platform identity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of workload identities and federation; document approved exclusions and service absence.",
+    "procedure": "Map service accounts, default identities, attached workloads and impersonation grants to owners and intended permissions. Inspect both use and administration of each identity.",
+    "criterion": "Privileged machine identities have specific purposes and accountable owners; default identities receive no unexplained broad access.",
+    "falsification": "A low-privileged deployer can attach or impersonate an overprivileged runtime identity.",
+    "required_evidence": [
+      "service account register",
+      "application ownership",
+      "impersonation analysis"
+    ],
+    "operations": [
+      "service_accounts",
+      "asset_iam",
+      "instances",
+      "run_services"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/best-practices-service-accounts",
+      "https://docs.cloud.google.com/iam/docs/service-account-impersonation"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "WID-02",
+    "domain": "WID",
+    "title": "Review user-managed service account keys",
+    "objective": "Review user-managed service account keys",
+    "owner": "Platform identity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of workload identities and federation; document approved exclusions and service absence.",
+    "procedure": "List key metadata for every discovered service account. Reconcile key age, expiry, disabled status, owner and external storage with the approved key policy; do not read private key material.",
+    "criterion": "Every user-managed key is justified and managed within the company's approved lifecycle, with a keyless migration decision.",
+    "falsification": "An unused service account still has an active externally held key with no custodian.",
+    "required_evidence": [
+      "key exception register",
+      "rotation records",
+      "usage review"
+    ],
+    "operations": [
+      "service_accounts",
+      "sa_keys"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+      "https://docs.cloud.google.com/iam/docs/creating-managing-service-account-keys"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "WID-03",
+    "domain": "WID",
+    "title": "Validate federation trust boundaries",
+    "objective": "Validate federation trust boundaries",
+    "owner": "Platform identity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of workload identities and federation; document approved exclusions and service absence.",
+    "procedure": "Inspect workload pools and provider issuer, audience, attribute mapping and condition. Trace external subject claims to IAM grants and repository or cloud ownership.",
+    "criterion": "Trust restricts intended external tenants and subjects; broad pools and impersonation grants are justified.",
+    "falsification": "Test the reasoning with a forked repository or different external tenant that might satisfy a weak attribute condition; do not request tokens.",
+    "required_evidence": [
+      "federation design",
+      "provider export",
+      "subject-to-role mapping"
+    ],
+    "operations": [
+      "wif_pools",
+      "wif_providers",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+      "https://docs.cloud.google.com/iam/docs/workload-identity-federation"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "WID-04",
+    "domain": "WID",
+    "title": "Inspect service account escalation paths",
+    "objective": "Inspect service account escalation paths",
+    "owner": "Platform identity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of workload identities and federation; document approved exclusions and service absence.",
+    "procedure": "Review serviceAccountUser, token creation, workload deployment and project-level permissions together. Trace who can modify code running as a sensitive service identity.",
+    "criterion": "Privilege reviews cover combined deployment and identity capabilities, including cross-project service accounts.",
+    "falsification": "Find an identity that cannot read data directly but can deploy code as an identity that can.",
+    "required_evidence": [
+      "privilege graph",
+      "deployment approvals"
+    ],
+    "operations": [
+      "asset_iam",
+      "project_iam",
+      "org_roles",
+      "project_roles",
+      "service_accounts"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/service-account-permissions",
+      "https://docs.cloud.google.com/iam/docs/best-practices-service-accounts"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "WID-05",
+    "domain": "WID",
+    "title": "Review workload identity activity",
+    "objective": "Review workload identity activity",
+    "owner": "Platform identity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of workload identities and federation; document approved exclusions and service absence.",
+    "procedure": "Join historical key, impersonation and workload-owner records to bounded audit samples. Ask for longer retained exports where the collection window is insufficient.",
+    "criterion": "Activity review can distinguish expected automation from unexplained identity use without treating absence of logs as inactivity.",
+    "falsification": "A key appears unused only because the relevant service's Data Access logging was disabled.",
+    "required_evidence": [
+      "activity review",
+      "log coverage matrix",
+      "automation schedules"
+    ],
+    "operations": [
+      "audit_logs",
+      "service_accounts",
+      "sa_keys"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iam/docs/audit-logging",
+      "https://docs.cloud.google.com/iam/docs/service-account-creds"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "ORG-01",
+    "domain": "ORG",
+    "title": "Verify effective organization policies",
+    "objective": "Verify effective organization policies",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of organization policies and guardrails; document approved exclusions and service absence.",
+    "procedure": "Read explicit overrides and effective values for the approved constraint list on every project. Compare against the organization's adopted baseline and conditions.",
+    "criterion": "Expected constraints are effective at the intended descendants; list output alone is insufficient.",
+    "falsification": "A lower-level override or conditional tag changes the result for a sensitive project.",
+    "required_evidence": [
+      "constraint baseline",
+      "effective-policy comparison"
+    ],
+    "operations": [
+      "org_policies",
+      "effective_policy",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/organization-policy/understanding-hierarchy",
+      "https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "ORG-02",
+    "domain": "ORG",
+    "title": "Assess domain and external sharing restrictions",
+    "objective": "Assess domain and external sharing restrictions",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of organization policies and guardrails; document approved exclusions and service absence.",
+    "procedure": "Review applicable domain-restriction constraints, existing external IAM grants and exceptions. Separate prevention of new grants from historical access review.",
+    "criterion": "The chosen sharing policy and actual external principals match approved collaboration needs.",
+    "falsification": "An existing external grant predates a policy change and remains unexplained.",
+    "required_evidence": [
+      "external-party register",
+      "sharing exceptions"
+    ],
+    "operations": [
+      "effective_policy",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/organization-policy/restricting-domains"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "ORG-03",
+    "domain": "ORG",
+    "title": "Assess service account key guardrails",
+    "objective": "Assess service account key guardrails",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of organization policies and guardrails; document approved exclusions and service absence.",
+    "procedure": "Check effective key creation and upload restrictions, default service account grant constraints and exception projects. Reconcile guardrails with existing keys.",
+    "criterion": "The intended prevention policies and legacy-key cleanup are both evidenced.",
+    "falsification": "Key creation is blocked but old externally stored keys remain active.",
+    "required_evidence": [
+      "key policy",
+      "exception approval",
+      "legacy key inventory"
+    ],
+    "operations": [
+      "effective_policy",
+      "sa_keys",
+      "project_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/organization-policy/restricting-service-accounts"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "ORG-04",
+    "domain": "ORG",
+    "title": "Review resource locations and sovereignty",
+    "objective": "Review resource locations and sovereignty",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of organization policies and guardrails; document approved exclusions and service absence.",
+    "procedure": "Map actual resource locations, backups and service-supported location constraints to contractual requirements. Identify global services and processing paths that need separate analysis.",
+    "criterion": "Approved location requirements apply to the relevant resource types and operational copies; unsupported services are documented.",
+    "falsification": "A primary region is approved while backups, logs or a global endpoint fall outside the reviewed requirement.",
+    "required_evidence": [
+      "data-location register",
+      "contract requirements",
+      "service exceptions"
+    ],
+    "operations": [
+      "assets",
+      "effective_policy"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/organization-policy/defining-locations",
+      "https://docs.cloud.google.com/assured-workloads/docs/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "ORG-05",
+    "domain": "ORG",
+    "title": "Review custom constraints and drift",
+    "objective": "Review custom constraints and drift",
+    "owner": "Cloud governance lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of organization policies and guardrails; document approved exclusions and service absence.",
+    "procedure": "Compare current organization-policy resources with version-controlled definitions and approved change history. Inspect dry-run versus enforced state and resource-method coverage.",
+    "criterion": "Guardrails relied upon by the audit are enforced for the intended operations, with reviewed changes and exceptions.",
+    "falsification": "A custom rule exists only in dry-run or does not cover the update method being relied upon.",
+    "required_evidence": [
+      "policy-as-code repository export",
+      "change records"
+    ],
+    "operations": [
+      "assets",
+      "org_policies",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/resource-manager/docs/custom-constraints"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "NET-01",
+    "domain": "NET",
+    "title": "Resolve effective firewall exposure",
+    "objective": "Resolve effective firewall exposure",
+    "owner": "Network security lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of network and perimeter security; document approved exclusions and service absence.",
+    "procedure": "Review VPC rules, hierarchical policies, target tags or service accounts, priorities, direction and disabled status. Join to routes, instance interfaces and approved service exposure.",
+    "criterion": "Public and lateral paths are justified after effective rule evaluation; a single broad rule is a review candidate, not automatic proof of reachability.",
+    "falsification": "A deny is shadowed by a higher-priority allow, or an apparent allow targets no instances.",
+    "required_evidence": [
+      "effective-firewall export",
+      "network exposure register"
+    ],
+    "operations": [
+      "firewalls",
+      "firewall_policies",
+      "networks",
+      "subnets",
+      "instances",
+      "routes"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/firewall/docs/firewall-policies-overview",
+      "https://docs.cloud.google.com/firewall/docs/firewalls"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "NET-02",
+    "domain": "NET",
+    "title": "Assess external application protection",
+    "objective": "Assess external application protection",
+    "owner": "Network security lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of network and perimeter security; document approved exclusions and service absence.",
+    "procedure": "Map external forwarding rules to backend services and Cloud Armor policy attachment. Review rule action, preview mode, bypass endpoints, TLS configuration and owner-approved exposure.",
+    "criterion": "Each critical public service has the agreed protections on its actual serving path.",
+    "falsification": "A protective policy exists but is unattached or all material rules run in preview.",
+    "required_evidence": [
+      "load-balancer architecture",
+      "TLS policy export",
+      "exception register"
+    ],
+    "operations": [
+      "forwarding",
+      "backend",
+      "armor",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+      "https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "NET-03",
+    "domain": "NET",
+    "title": "Inspect private access and egress",
+    "objective": "Inspect private access and egress",
+    "owner": "Network security lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of network and perimeter security; document approved exclusions and service absence.",
+    "procedure": "Inspect subnet private access, NAT configuration, routes, service endpoints and DNS resolution design. Reconcile permitted outbound destinations with application requirements.",
+    "criterion": "Private access and egress controls match the approved traffic model and observable flows.",
+    "falsification": "A private VM reaches an unintended destination through NAT or a transit route.",
+    "required_evidence": [
+      "egress policy",
+      "flow-log analysis",
+      "network diagrams"
+    ],
+    "operations": [
+      "subnets",
+      "routers",
+      "routes",
+      "networks",
+      "dns"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vpc/docs/private-google-access",
+      "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+      "https://docs.cloud.google.com/nat/docs/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "NET-04",
+    "domain": "NET",
+    "title": "Assess VPC Service Controls",
+    "objective": "Assess VPC Service Controls",
+    "owner": "Network security lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of network and perimeter security; document approved exclusions and service absence.",
+    "procedure": "Read access policies and perimeter status, ingress, egress, restricted services, access levels and dry-run specifications. Reconcile perimeter project numbers and bridges to data flows.",
+    "criterion": "The perimeter protects the intended supported services and approved cross-boundary paths in enforced configuration.",
+    "falsification": "A protected project has an unrestricted service path, bridge or broad ingress identity condition.",
+    "required_evidence": [
+      "perimeter design",
+      "access-level export",
+      "dry-run review"
+    ],
+    "operations": [
+      "access_policies",
+      "perimeters",
+      "project"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vpc-service-controls/docs/overview",
+      "https://docs.cloud.google.com/vpc-service-controls/docs/ingress-egress-rules"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "NET-05",
+    "domain": "NET",
+    "title": "Review DNS and network telemetry",
+    "objective": "Review DNS and network telemetry",
+    "owner": "Network security lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of network and perimeter security; document approved exclusions and service absence.",
+    "procedure": "Review DNS zone visibility and DNSSEC where applicable, flow-log enablement and firewall logging on material paths. Obtain existing queries or flow samples and retention evidence.",
+    "criterion": "Telemetry supports the agreed detection use cases; name resolution and DNS change ownership are controlled.",
+    "falsification": "A critical subnet or deny rule has no logging while a dashboard suggests complete network visibility.",
+    "required_evidence": [
+      "DNS settings export",
+      "flow evidence",
+      "network monitoring use cases"
+    ],
+    "operations": [
+      "dns",
+      "subnets",
+      "firewalls",
+      "log_buckets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/dns/docs/dnssec",
+      "https://docs.cloud.google.com/vpc/docs/flow-logs"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "HYB-01",
+    "domain": "HYB",
+    "title": "Review Shared VPC administration",
+    "objective": "Review Shared VPC administration",
+    "owner": "Network platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of hybrid connectivity and shared networks; document approved exclusions and service absence.",
+    "procedure": "Identify host and service projects and network-user grants. Reconcile cross-project service identities and ownership of firewall, subnet and DNS changes.",
+    "criterion": "Host and service project responsibilities and permissions preserve the approved separation.",
+    "falsification": "A service-project deployer can alter shared host-network security unexpectedly.",
+    "required_evidence": [
+      "Shared VPC relationship export",
+      "responsibility matrix"
+    ],
+    "operations": [
+      "assets",
+      "networks",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vpc/docs/shared-vpc"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "HYB-02",
+    "domain": "HYB",
+    "title": "Assess VPN redundancy and authentication",
+    "objective": "Assess VPN redundancy and authentication",
+    "owner": "Network platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of hybrid connectivity and shared networks; document approved exclusions and service absence.",
+    "procedure": "Inspect VPN tunnels, peer endpoints, routing and status evidence against the intended availability design. Review key custody from records without retrieving preshared secrets.",
+    "criterion": "Redundancy and routing match the approved design, with current monitoring and prior failure-test evidence.",
+    "falsification": "Two apparently redundant tunnels depend on the same unprotected peer device or connection.",
+    "required_evidence": [
+      "VPN topology",
+      "key custody record",
+      "prior failover results"
+    ],
+    "operations": [
+      "vpn",
+      "routers",
+      "routes"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/overview",
+      "https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/best-practices"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "HYB-03",
+    "domain": "HYB",
+    "title": "Assess Interconnect dependencies",
+    "objective": "Assess Interconnect dependencies",
+    "owner": "Network platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of hybrid connectivity and shared networks; document approved exclusions and service absence.",
+    "procedure": "Map attachments, edge locations, router peers and provider circuits to business-critical paths. Review utilization and fault evidence from existing monitoring exports.",
+    "criterion": "Availability objectives account for provider, facility and routing dependencies.",
+    "falsification": "Nominally redundant attachments share a failure domain omitted from the design.",
+    "required_evidence": [
+      "provider circuit records",
+      "monitoring export",
+      "topology"
+    ],
+    "operations": [
+      "interconnect",
+      "routers",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/overview",
+      "https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/redundancy"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "HYB-04",
+    "domain": "HYB",
+    "title": "Review peering and transit trust",
+    "objective": "Review peering and transit trust",
+    "owner": "Network platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of hybrid connectivity and shared networks; document approved exclusions and service absence.",
+    "procedure": "Review peering, imported and exported routes, custom routes and network connectivity hubs found in asset metadata. Trace intended access across shared or acquired organizations.",
+    "criterion": "Each trust connection has an owner, purpose and reviewed reachability analysis.",
+    "falsification": "A new peering or exported default route extends access beyond the approved boundary.",
+    "required_evidence": [
+      "peering approvals",
+      "transit routing analysis"
+    ],
+    "operations": [
+      "networks",
+      "routes",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vpc/docs/vpc-peering",
+      "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "HYB-05",
+    "domain": "HYB",
+    "title": "Assess hybrid administration access",
+    "objective": "Assess hybrid administration access",
+    "owner": "Network platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of hybrid connectivity and shared networks; document approved exclusions and service absence.",
+    "procedure": "Trace SSH, RDP and administrative application access through IAP, VPN or equivalent controls. Review IAM conditions, instance login controls and existing access logs.",
+    "criterion": "Administrative access meets approved identity and network requirements, including emergency paths.",
+    "falsification": "An external address and permissive rule bypass the documented administrative gateway.",
+    "required_evidence": [
+      "administration design",
+      "IAP access policy export",
+      "access sample"
+    ],
+    "operations": [
+      "instances",
+      "firewalls",
+      "asset_iam",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/iap/docs/using-tcp-forwarding",
+      "https://docs.cloud.google.com/compute/docs/oslogin"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "CMP-01",
+    "domain": "CMP",
+    "title": "Review VM identity and metadata",
+    "objective": "Review VM identity and metadata",
+    "owner": "Compute platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compute engine and host security; document approved exclusions and service absence.",
+    "procedure": "Inspect instance service accounts, access scopes, project and instance metadata, external addresses and sensitive startup configuration. Reconcile identity purpose with IAM privileges.",
+    "criterion": "Runtime identity and metadata follow the approved baseline; exported values are handled as sensitive.",
+    "falsification": "A VM uses a default overprivileged identity or a project SSH key unexpectedly applies.",
+    "required_evidence": [
+      "VM baseline",
+      "identity mapping",
+      "metadata review"
+    ],
+    "operations": [
+      "instances",
+      "project_info",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/access/service-accounts",
+      "https://docs.cloud.google.com/compute/docs/metadata/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "CMP-02",
+    "domain": "CMP",
+    "title": "Assess host login controls",
+    "objective": "Assess host login controls",
+    "owner": "Compute platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compute engine and host security; document approved exclusions and service absence.",
+    "procedure": "Inspect OS Login metadata and exceptions, project-wide SSH keys, IAP path and administrative roles. Use guest-side authorized evidence for local accounts not represented in GCP APIs.",
+    "criterion": "All privileged host access paths are covered by current identity, MFA and lifecycle requirements.",
+    "falsification": "A compliant OS Login setting coexists with an unmanaged local administrator account.",
+    "required_evidence": [
+      "guest account inventory",
+      "login policy",
+      "access review"
+    ],
+    "operations": [
+      "instances",
+      "project_info",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/oslogin/set-up-oslogin",
+      "https://docs.cloud.google.com/compute/docs/oslogin"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "CMP-03",
+    "domain": "CMP",
+    "title": "Review boot integrity and images",
+    "objective": "Review boot integrity and images",
+    "owner": "Compute platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compute engine and host security; document approved exclusions and service absence.",
+    "procedure": "Inspect Shielded VM settings, image origin, image lifecycle and approved exceptions. Correlate vulnerability and configuration records for the operating system.",
+    "criterion": "Image provenance and boot controls meet the adopted platform baseline.",
+    "falsification": "A production image is outside the approved pipeline or an integrity exception has no owner.",
+    "required_evidence": [
+      "image approval",
+      "integrity monitoring",
+      "vulnerability export"
+    ],
+    "operations": [
+      "instances",
+      "images",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/compute/shielded-vm/docs/shielded-vm",
+      "https://docs.cloud.google.com/compute/docs/images/image-management-best-practices"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "CMP-04",
+    "domain": "CMP",
+    "title": "Assess patching and vulnerability operations",
+    "objective": "Assess patching and vulnerability operations",
+    "owner": "Compute platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compute engine and host security; document approved exclusions and service absence.",
+    "procedure": "Reconcile OS inventory and vulnerability or patch-management exports to the VM population. Sample overdue fixes, maintenance approvals and validated exceptions.",
+    "criterion": "The approved remediation timelines are met across the entire VM population, including unmanaged hosts.",
+    "falsification": "A healthy patch dashboard excludes an instance with no inventory agent.",
+    "required_evidence": [
+      "patch compliance export",
+      "asset reconciliation",
+      "exception records"
+    ],
+    "operations": [
+      "instances",
+      "assets",
+      "scc"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/compute/vm-manager/docs/overview",
+      "https://docs.cloud.google.com/compute/vm-manager/docs/patch"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "CMP-05",
+    "domain": "CMP",
+    "title": "Inspect disks and deletion protection",
+    "objective": "Inspect disks and deletion protection",
+    "owner": "Compute platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compute engine and host security; document approved exclusions and service absence.",
+    "procedure": "Review disk encryption references, attachment, snapshot schedules and instance deletion protection where applicable. Join backup coverage to business recovery requirements.",
+    "criterion": "Data-bearing compute resources have approved protection, encryption and recovery arrangements.",
+    "falsification": "An unattached sensitive disk or critical instance lacks the expected backup association.",
+    "required_evidence": [
+      "disk classification",
+      "backup mapping",
+      "deletion policy"
+    ],
+    "operations": [
+      "instances",
+      "disks",
+      "snapshots",
+      "schedules"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption",
+      "https://docs.cloud.google.com/compute/docs/instances/preventing-accidental-vm-deletion"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GKE-01",
+    "domain": "GKE",
+    "title": "Assess cluster control-plane access",
+    "objective": "Assess cluster control-plane access",
+    "owner": "Kubernetes platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of kubernetes and gke; document approved exclusions and service absence.",
+    "procedure": "Inspect cluster endpoint exposure, authorized networks, IAM integration and authentication settings. Reconcile private connectivity and administrator paths.",
+    "criterion": "Control-plane access matches the documented threat model and approved administrator population.",
+    "falsification": "A private-node cluster still has an unintended public control-plane access path.",
+    "required_evidence": [
+      "cluster architecture",
+      "administrator review"
+    ],
+    "operations": [
+      "clusters",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster",
+      "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/network-isolation"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GKE-02",
+    "domain": "GKE",
+    "title": "Review Kubernetes RBAC and admission",
+    "objective": "Review Kubernetes RBAC and admission",
+    "owner": "Kubernetes platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of kubernetes and gke; document approved exclusions and service absence.",
+    "procedure": "Use cluster configuration plus customer-provided metadata exports of roles, bindings, admission policies and workloads. Trace namespace administrators and cluster-wide privilege without reading Kubernetes Secret payloads.",
+    "criterion": "RBAC and admission enforcement constrain the intended workloads and administrators.",
+    "falsification": "A namespace owner can create a privileged workload or bind an unintended cluster role.",
+    "required_evidence": [
+      "Kubernetes RBAC export",
+      "admission policy and results",
+      "namespace ownership"
+    ],
+    "operations": [
+      "clusters",
+      "asset_iam",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control",
+      "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GKE-03",
+    "domain": "GKE",
+    "title": "Assess workload and node identity",
+    "objective": "Assess workload and node identity",
+    "owner": "Kubernetes platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of kubernetes and gke; document approved exclusions and service absence.",
+    "procedure": "Inspect Workload Identity Federation settings, node service accounts and metadata protection. Trace Kubernetes service-account identity grants to Google APIs.",
+    "criterion": "Workloads have appropriately scoped identities and cannot rely on unnecessarily privileged node credentials.",
+    "falsification": "A workload without its own grant can obtain access through an excessive node identity or deployment permission.",
+    "required_evidence": [
+      "Kubernetes service-account mapping",
+      "node identity review"
+    ],
+    "operations": [
+      "clusters",
+      "service_accounts",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+      "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/protecting-cluster-metadata"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GKE-04",
+    "domain": "GKE",
+    "title": "Review cluster maintenance and supply chain",
+    "objective": "Review cluster maintenance and supply chain",
+    "owner": "Kubernetes platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of kubernetes and gke; document approved exclusions and service absence.",
+    "procedure": "Inspect versions, release channels, maintenance exclusions and node update policy. Reconcile image admission, vulnerability evidence and supported-version requirements.",
+    "criterion": "The cluster and node population follows an approved support and upgrade policy with controlled exclusions.",
+    "falsification": "An apparently current control plane masks old nodes or a long-lived maintenance exclusion.",
+    "required_evidence": [
+      "version inventory",
+      "upgrade history",
+      "image provenance"
+    ],
+    "operations": [
+      "clusters",
+      "binary",
+      "repositories"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels",
+      "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "GKE-05",
+    "domain": "GKE",
+    "title": "Assess workload isolation and recovery",
+    "objective": "Assess workload isolation and recovery",
+    "owner": "Kubernetes platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of kubernetes and gke; document approved exclusions and service absence.",
+    "procedure": "Inspect dataplane, network-policy and backup configuration; obtain actual policy coverage, persistent-volume mapping and past restore results. Treat Autopilot and Standard responsibilities separately.",
+    "criterion": "Isolation and recovery requirements are evidenced at workload level, including persistent state.",
+    "falsification": "A network-policy capability is enabled but a sensitive namespace has no effective policy, or its volumes are outside backup scope.",
+    "required_evidence": [
+      "network-policy export",
+      "volume inventory",
+      "restore report"
+    ],
+    "operations": [
+      "clusters",
+      "assets",
+      "snapshots"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/network-policy",
+      "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/concepts/backup-for-gke"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "RUN-01",
+    "domain": "RUN",
+    "title": "Review Cloud Run exposure and identity",
+    "objective": "Review Cloud Run exposure and identity",
+    "owner": "Application platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of serverless and messaging; document approved exclusions and service absence.",
+    "procedure": "Inspect service ingress, revision configuration, authentication/IAM and runtime identities across all approved regions. Review direct service URLs and load-balancer paths together.",
+    "criterion": "Public invocation and runtime privileges match the application's approved exposure.",
+    "falsification": "A load balancer is protected while the underlying service remains invokable directly.",
+    "required_evidence": [
+      "service architecture",
+      "invoker review",
+      "region inventory"
+    ],
+    "operations": [
+      "run_services",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/run/docs/securing/ingress",
+      "https://docs.cloud.google.com/run/docs/authenticating/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "RUN-02",
+    "domain": "RUN",
+    "title": "Assess functions and event triggers",
+    "objective": "Assess functions and event triggers",
+    "owner": "Application platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of serverless and messaging; document approved exclusions and service absence.",
+    "procedure": "Map functions to generation, runtime identity, ingress and event sources. Reconcile source ownership, authentication and supported runtime lifecycle.",
+    "criterion": "Each function and trigger has controlled invocation and maintained runtime dependencies.",
+    "falsification": "An event path or old function generation is omitted from the application inventory.",
+    "required_evidence": [
+      "function inventory",
+      "trigger policy",
+      "runtime review"
+    ],
+    "operations": [
+      "functions",
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/functions/docs/securing/managing-access-iam",
+      "https://docs.cloud.google.com/functions/docs/runtime-support"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "RUN-03",
+    "domain": "RUN",
+    "title": "Inspect scheduled and batch execution",
+    "objective": "Inspect scheduled and batch execution",
+    "owner": "Application platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of serverless and messaging; document approved exclusions and service absence.",
+    "procedure": "Review Cloud Run jobs and Scheduler targets, service identities and authorization. Check whether embedded request bodies, arguments or environment values contain sensitive material.",
+    "criterion": "Automated jobs have least-privileged identities, reviewed destinations and failure handling.",
+    "falsification": "A scheduler can call an unintended authenticated endpoint or silently fails without owner response.",
+    "required_evidence": [
+      "job ownership",
+      "failure records",
+      "target authorization"
+    ],
+    "operations": [
+      "run_jobs",
+      "scheduler",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/run/docs/create-jobs",
+      "https://docs.cloud.google.com/scheduler/docs/http-target-auth"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "RUN-04",
+    "domain": "RUN",
+    "title": "Review messaging access and data lifecycle",
+    "objective": "Review messaging access and data lifecycle",
+    "owner": "Application platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of serverless and messaging; document approved exclusions and service absence.",
+    "procedure": "Inspect topic and subscription IAM, push authentication, retention, dead-letter configuration and encryption references. Reconcile subscriber destinations and data sensitivity.",
+    "criterion": "Authorized publishers and subscribers, retention and delivery behavior match the approved data flow.",
+    "falsification": "An external push endpoint or dead-letter topic retains sensitive data outside the documented boundary.",
+    "required_evidence": [
+      "messaging data flow",
+      "subscriber ownership",
+      "retention approval"
+    ],
+    "operations": [
+      "pubsub_topics",
+      "pubsub_subs",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/pubsub/docs/subscription-properties",
+      "https://docs.cloud.google.com/pubsub/docs/authentication"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "RUN-05",
+    "domain": "RUN",
+    "title": "Assess runtime secrets and network dependencies",
+    "objective": "Assess runtime secrets and network dependencies",
+    "owner": "Application platform lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of serverless and messaging; document approved exclusions and service absence.",
+    "procedure": "Inspect revision metadata, secret references, VPC connectivity and egress configuration. Obtain deployment records and existing health evidence without invoking workloads.",
+    "criterion": "Runtime dependencies, secret versions and network access follow the deployment baseline.",
+    "falsification": "A new revision uses an unreviewed secret version or broad egress and remains outside the operating review.",
+    "required_evidence": [
+      "deployment history",
+      "secret mapping",
+      "dependency diagram"
+    ],
+    "operations": [
+      "run_services",
+      "functions",
+      "secrets",
+      "secret_versions"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/run/docs/configuring/services/secrets",
+      "https://docs.cloud.google.com/run/docs/configuring/connecting-vpc"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "STO-01",
+    "domain": "STO",
+    "title": "Assess public and external bucket access",
+    "objective": "Assess public and external bucket access",
+    "owner": "Storage and data owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cloud storage and data protection; document approved exclusions and service absence.",
+    "procedure": "Join bucket metadata, IAM bindings, inherited public access prevention and approved external-sharing uses. If uniform access is off, request object ACL metadata separately; do not download objects.",
+    "criterion": "Public and external access is intentional and governed across IAM, ACL and signed-access paths.",
+    "falsification": "Public prevention is enabled but long-lived signed URLs or legacy object ACL exposure are absent from the review.",
+    "required_evidence": [
+      "sharing register",
+      "ACL metadata when applicable",
+      "signed URL governance"
+    ],
+    "operations": [
+      "buckets",
+      "asset_iam",
+      "effective_policy"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/storage/docs/public-access-prevention",
+      "https://docs.cloud.google.com/storage/docs/access-control/signed-urls"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "STO-02",
+    "domain": "STO",
+    "title": "Review uniform access and granular permissions",
+    "objective": "Review uniform access and granular permissions",
+    "owner": "Storage and data owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cloud storage and data protection; document approved exclusions and service absence.",
+    "procedure": "Inspect uniform bucket-level access, managed folders and resource IAM. Reconcile legacy bucket and object ACLs where uniform access is disabled.",
+    "criterion": "The actual permission system is covered by the access review, including managed folders.",
+    "falsification": "A project-level review overlooks a bucket or managed-folder grant, or assumes IAM describes every object ACL.",
+    "required_evidence": [
+      "bucket permission review",
+      "managed-folder inventory",
+      "legacy ACL export"
+    ],
+    "operations": [
+      "buckets",
+      "asset_iam",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access",
+      "https://docs.cloud.google.com/storage/docs/managed-folders"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "STO-03",
+    "domain": "STO",
+    "title": "Assess retention lifecycle and deletion recovery",
+    "objective": "Assess retention lifecycle and deletion recovery",
+    "owner": "Storage and data owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cloud storage and data protection; document approved exclusions and service absence.",
+    "procedure": "Review retention policy, lock status, lifecycle rules, versioning and soft-delete settings against approved retention and recovery requirements.",
+    "criterion": "Retention and deletion recovery work together with legal requirements and operational needs; locks are assessed without changing them.",
+    "falsification": "A lifecycle action removes recoverable versions before the required recovery window.",
+    "required_evidence": [
+      "retention schedule",
+      "legal holds",
+      "recovery examples"
+    ],
+    "operations": [
+      "buckets",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/storage/docs/bucket-lock",
+      "https://docs.cloud.google.com/storage/docs/soft-delete",
+      "https://docs.cloud.google.com/storage/docs/lifecycle"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "STO-04",
+    "domain": "STO",
+    "title": "Inspect bucket encryption and location",
+    "objective": "Inspect bucket encryption and location",
+    "owner": "Storage and data owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cloud storage and data protection; document approved exclusions and service absence.",
+    "procedure": "Map storage location, default key references and object-encryption evidence to requirements. A default CMEK setting alone does not prove all existing objects use that key.",
+    "criterion": "Location and encryption requirements are supported for current and historical data populations.",
+    "falsification": "An object predates the default key change or a key's location conflicts with the assumed recovery design.",
+    "required_evidence": [
+      "encryption coverage export",
+      "location requirements",
+      "key dependency map"
+    ],
+    "operations": [
+      "buckets",
+      "assets",
+      "keys"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/storage/docs/encryption/customer-managed-keys",
+      "https://docs.cloud.google.com/storage/docs/locations"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "STO-05",
+    "domain": "STO",
+    "title": "Review storage logging and transfer paths",
+    "objective": "Review storage logging and transfer paths",
+    "owner": "Storage and data owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cloud storage and data protection; document approved exclusions and service absence.",
+    "procedure": "Reconcile Data Access settings, bucket access patterns, storage-transfer resources and owner-provided transfer histories. Inspect service-agent permissions and external destinations.",
+    "criterion": "Material reads and transfers have the agreed authorization, telemetry and retention coverage.",
+    "falsification": "An apparently inactive public object path produces no authenticated access log and is misclassified as unused.",
+    "required_evidence": [
+      "transfer-job export",
+      "access review",
+      "logging coverage"
+    ],
+    "operations": [
+      "buckets",
+      "asset_iam",
+      "audit_logs",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/storage/docs/audit-logging",
+      "https://docs.cloud.google.com/storage-transfer/docs/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DAT-01",
+    "domain": "DAT",
+    "title": "Review Cloud SQL access and exposure",
+    "objective": "Review Cloud SQL access and exposure",
+    "owner": "Database and analytics lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of databases and analytics; document approved exclusions and service absence.",
+    "procedure": "Inspect public and private addresses, authorized networks, TLS requirements, flags and IAM database authentication. Request database-native user and grant evidence; project IAM is only part of the review.",
+    "criterion": "Network paths and database identities meet the approved access model for each engine.",
+    "falsification": "A private instance has an unmanaged database administrator or a TLS mode weaker than the documented baseline.",
+    "required_evidence": [
+      "database user and grant export",
+      "connectivity design",
+      "engine baseline"
+    ],
+    "operations": [
+      "sql",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/sql/docs/postgres/iam-authentication",
+      "https://docs.cloud.google.com/sql/docs/postgres/authorize-networks",
+      "https://docs.cloud.google.com/sql/docs/postgres/configure-ssl-instance"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DAT-02",
+    "domain": "DAT",
+    "title": "Assess SQL availability and recovery",
+    "objective": "Assess SQL availability and recovery",
+    "owner": "Database and analytics lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of databases and analytics; document approved exclusions and service absence.",
+    "procedure": "Inspect availability type, backups, point-in-time recovery and replica configuration for the actual database engine. Review past restore records and dependent encryption keys.",
+    "criterion": "The selected configuration and demonstrated restore capability meet approved RPO and RTO.",
+    "falsification": "A successful backup exists but point-in-time recovery is unavailable for the incident window.",
+    "required_evidence": [
+      "recovery objectives",
+      "backup history",
+      "restore results"
+    ],
+    "operations": [
+      "sql",
+      "sql_backups",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups",
+      "https://docs.cloud.google.com/sql/docs/postgres/high-availability"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DAT-03",
+    "domain": "DAT",
+    "title": "Review BigQuery access and fine-grained controls",
+    "objective": "Review BigQuery access and fine-grained controls",
+    "owner": "Database and analytics lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of databases and analytics; document approved exclusions and service absence.",
+    "procedure": "Use dataset and table asset metadata plus approved exports of row policies, policy tags, masking rules and authorized views. Trace inherited IAM, dataset ACLs and data-sharing links.",
+    "criterion": "Sensitive data access is justified at dataset, table, row and column levels where required; metadata-only coverage is documented.",
+    "falsification": "An authorized view or broad dataset grant bypasses the intended interpretation of a masking control.",
+    "required_evidence": [
+      "dataset ACL export",
+      "row and column policy metadata",
+      "sharing register"
+    ],
+    "operations": [
+      "assets",
+      "asset_iam",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/bigquery/docs/row-level-security-intro",
+      "https://docs.cloud.google.com/bigquery/docs/column-level-security-intro",
+      "https://docs.cloud.google.com/bigquery/docs/authorized-views"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DAT-04",
+    "domain": "DAT",
+    "title": "Assess BigQuery lifecycle and query governance",
+    "objective": "Assess BigQuery lifecycle and query governance",
+    "owner": "Database and analytics lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of databases and analytics; document approved exclusions and service absence.",
+    "procedure": "Inspect dataset locations, encryption, expirations, reservations and job-history evidence supplied by owners. Review copies, extracts and scheduled transfers without running SQL jobs.",
+    "criterion": "Retention, processing locations and query/export use match approved data and cost policies.",
+    "falsification": "A dataset expiry looks compliant while extracted tables persist in another project or bucket.",
+    "required_evidence": [
+      "job-history metadata",
+      "transfer schedules",
+      "data retention matrix"
+    ],
+    "operations": [
+      "assets",
+      "asset_iam",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/bigquery/docs/managing-datasets",
+      "https://docs.cloud.google.com/bigquery/docs/reference/auditlogs",
+      "https://docs.cloud.google.com/bigquery/docs/exporting-data"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DAT-05",
+    "domain": "DAT",
+    "title": "Assess other managed data platforms",
+    "objective": "Assess other managed data platforms",
+    "owner": "Database and analytics lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of databases and analytics; document approved exclusions and service absence.",
+    "procedure": "Identify Spanner, Firestore, Bigtable, AlloyDB, Redis and data-processing services from inventory. Apply service-specific access, network, encryption, availability and backup tests using owner-provided metadata where native collectors are absent.",
+    "criterion": "Every material data platform has an explicit evidence plan; absence of a dedicated collector is not treated as absence of risk.",
+    "falsification": "A critical Firestore or Bigtable service is omitted because only SQL instances were enumerated.",
+    "required_evidence": [
+      "service-specific configuration exports",
+      "native grants",
+      "restore evidence"
+    ],
+    "operations": [
+      "spanner",
+      "redis",
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/spanner/docs/security-privacy-compliance",
+      "https://docs.cloud.google.com/firestore/docs/security/overview",
+      "https://docs.cloud.google.com/bigtable/docs/access-control",
+      "https://docs.cloud.google.com/alloydb/docs/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "KEY-01",
+    "domain": "KEY",
+    "title": "Review Secret Manager access and replication",
+    "objective": "Review Secret Manager access and replication",
+    "owner": "Cryptography and secrets owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of secrets and cryptographic keys; document approved exclusions and service absence.",
+    "procedure": "Inspect secret metadata, replication, IAM, labels and owners. Trace read and administration privileges while never accessing secret payloads.",
+    "criterion": "Secret access and location are justified and match the documented consuming workloads.",
+    "falsification": "A broad project-level Secret Accessor grant exposes unrelated application secrets.",
+    "required_evidence": [
+      "secret ownership",
+      "consumer mapping",
+      "access review"
+    ],
+    "operations": [
+      "secrets",
+      "asset_iam",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/secret-manager/docs/best-practices",
+      "https://docs.cloud.google.com/secret-manager/docs/access-control"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "KEY-02",
+    "domain": "KEY",
+    "title": "Assess secret rotation and version lifecycle",
+    "objective": "Assess secret rotation and version lifecycle",
+    "owner": "Cryptography and secrets owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of secrets and cryptographic keys; document approved exclusions and service absence.",
+    "procedure": "List version metadata, status and dates; inspect rotation notifications, automation records and deployment version references. A rotation schedule is not proof the secret changed.",
+    "criterion": "Rotation and revocation operate within approved requirements and applications consume intended versions.",
+    "falsification": "A configured rotation topic has no functioning subscriber or workloads still use an old enabled version.",
+    "required_evidence": [
+      "rotation execution records",
+      "version-to-deployment mapping"
+    ],
+    "operations": [
+      "secrets",
+      "secret_versions",
+      "run_services"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/secret-manager/docs/rotation-recommendations",
+      "https://docs.cloud.google.com/secret-manager/docs/view-secret-version"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "KEY-03",
+    "domain": "KEY",
+    "title": "Assess KMS purpose and separation of duties",
+    "objective": "Assess KMS purpose and separation of duties",
+    "owner": "Cryptography and secrets owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of secrets and cryptographic keys; document approved exclusions and service absence.",
+    "procedure": "Inspect key rings, algorithms, protection level, IAM and encrypt/decrypt versus administration permissions. Map key projects and service agents to protected resources.",
+    "criterion": "Key administration and use align with the approved custody and separation model.",
+    "falsification": "A data administrator can also grant themselves decryption access to the same sensitive dataset.",
+    "required_evidence": [
+      "key inventory",
+      "custody matrix",
+      "access review"
+    ],
+    "operations": [
+      "keyrings",
+      "keys",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kms/docs/separation-of-duties",
+      "https://docs.cloud.google.com/kms/docs/iam"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "KEY-04",
+    "domain": "KEY",
+    "title": "Review key lifecycle and availability",
+    "objective": "Review key lifecycle and availability",
+    "owner": "Cryptography and secrets owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of secrets and cryptographic keys; document approved exclusions and service absence.",
+    "procedure": "Review primary versions, rotation and destruction schedule evidence. Reconcile disabled or pending-destruction versions with active data and backup dependencies.",
+    "criterion": "Key lifecycle changes preserve required availability and approved cryptographic policy.",
+    "falsification": "A retained backup depends on a key version scheduled for destruction before retention ends.",
+    "required_evidence": [
+      "key-version metadata export",
+      "destruction approvals",
+      "dependency mapping"
+    ],
+    "operations": [
+      "keys",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kms/docs/key-rotation",
+      "https://docs.cloud.google.com/kms/docs/key-states"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "KEY-05",
+    "domain": "KEY",
+    "title": "Assess CMEK and external key dependencies",
+    "objective": "Assess CMEK and external key dependencies",
+    "owner": "Cryptography and secrets owner",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of secrets and cryptographic keys; document approved exclusions and service absence.",
+    "procedure": "Map required CMEK coverage and EKM or HSM requirements to actual resource metadata and service support. Review provider outages, key access and previous recovery evidence.",
+    "criterion": "The adopted encryption model is implemented where required and its operational dependencies are understood.",
+    "falsification": "A CMEK label is present while the service resource uses provider-managed encryption, or EKM recovery is untested.",
+    "required_evidence": [
+      "CMEK coverage matrix",
+      "external-key contract",
+      "recovery evidence"
+    ],
+    "operations": [
+      "assets",
+      "keys"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kms/docs/cmek",
+      "https://docs.cloud.google.com/kms/docs/ekm"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "LOG-01",
+    "domain": "LOG",
+    "title": "Verify Data Access audit coverage",
+    "objective": "Verify Data Access audit coverage",
+    "owner": "Security logging lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of audit logging and evidence retention; document approved exclusions and service absence.",
+    "procedure": "Read organization, ancestor-folder and project auditConfigs, service exceptions and exempted principals. Map enabled services to the required ADMIN_READ, DATA_READ and DATA_WRITE coverage.",
+    "criterion": "The adopted logging matrix is effectively configured and inherited exemptions are explicitly reviewed.",
+    "falsification": "An empty project auditConfig is interpreted without inspecting inherited settings, or an exemption suppresses the chosen principal.",
+    "required_evidence": [
+      "service logging matrix",
+      "effective auditConfig analysis"
+    ],
+    "operations": [
+      "org_iam",
+      "folder_iam",
+      "project_iam",
+      "services"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/logging/docs/audit",
+      "https://docs.cloud.google.com/logging/docs/audit/configure-data-access"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "LOG-02",
+    "domain": "LOG",
+    "title": "Review routing sinks and exclusions",
+    "objective": "Review routing sinks and exclusions",
+    "owner": "Security logging lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of audit logging and evidence retention; document approved exclusions and service absence.",
+    "procedure": "Inspect project and organization sinks, inclusion and exclusion filters, destination ownership and writer grants. Review intercepting behavior and aggregated child scope.",
+    "criterion": "Required events reach approved destinations without unintended filtering or privilege gaps.",
+    "falsification": "A central sink exists but its writer lacks destination access or its filter excludes the target event.",
+    "required_evidence": [
+      "sink destination IAM",
+      "delivery metrics",
+      "filter review"
+    ],
+    "operations": [
+      "org_sinks",
+      "sinks",
+      "exclusions",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/logging/docs/routing/overview",
+      "https://docs.cloud.google.com/logging/docs/export/aggregated_sinks"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "LOG-03",
+    "domain": "LOG",
+    "title": "Assess retention location and protected access",
+    "objective": "Assess retention location and protected access",
+    "owner": "Security logging lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of audit logging and evidence retention; document approved exclusions and service absence.",
+    "procedure": "Inspect log bucket retention, location, access restrictions and lock state across all used locations. Reconcile SIEM and archive retention outside Cloud Logging.",
+    "criterion": "The retention and access model satisfies the adopted evidence requirements across every copy.",
+    "falsification": "Only global buckets were checked while a regional bucket holds the relevant events for a shorter period.",
+    "required_evidence": [
+      "retention matrix",
+      "SIEM settings",
+      "bucket access review"
+    ],
+    "operations": [
+      "log_buckets",
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/logging/docs/buckets",
+      "https://docs.cloud.google.com/logging/docs/storage"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "LOG-04",
+    "domain": "LOG",
+    "title": "Prove an existing event's end-to-end trace",
+    "objective": "Prove an existing event's end-to-end trace",
+    "owner": "Security logging lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of audit logging and evidence retention; document approved exclusions and service absence.",
+    "procedure": "Select a known historical approved administrative or data event from a ticket. Trace it through source logging, sink routing, destination and detection within a bounded UTC window.",
+    "criterion": "The specific event is attributable and retrievable with expected fields and timing; the sample's limits are documented.",
+    "falsification": "The source event is present but disappears after routing, or the sampled log window omits the ticket time.",
+    "required_evidence": [
+      "known-event record",
+      "source and destination evidence",
+      "timing comparison"
+    ],
+    "operations": [
+      "audit_logs",
+      "sinks",
+      "log_metrics"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/logging/docs/view/logging-query-language",
+      "https://docs.cloud.google.com/logging/docs/audit/understanding-audit-logs"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "LOG-05",
+    "domain": "LOG",
+    "title": "Assess integrity and evidence visibility",
+    "objective": "Assess integrity and evidence visibility",
+    "owner": "Security logging lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of audit logging and evidence retention; document approved exclusions and service absence.",
+    "procedure": "Review log administration, private-log viewing, deletion and sink modification privileges. Reconcile coverage counts and missing-access errors before concluding about activity.",
+    "criterion": "The audit can explain who can read or affect evidence and where visibility is incomplete.",
+    "falsification": "The collector receives no private entries because it lacks Private Logs Viewer permissions.",
+    "required_evidence": [
+      "evidence-access matrix",
+      "error register",
+      "log administrator review"
+    ],
+    "operations": [
+      "asset_iam",
+      "audit_logs",
+      "project_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/logging/docs/access-control",
+      "https://docs.cloud.google.com/logging/docs/audit/best-practices"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "SEC-01",
+    "domain": "SEC",
+    "title": "Assess Security Command Center coverage",
+    "objective": "Assess Security Command Center coverage",
+    "owner": "Security operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of detection and incident response; document approved exclusions and service absence.",
+    "procedure": "Reconcile activation scope, edition, data location, services, detectors and project population with expected coverage. Read findings and record activation or permission failures.",
+    "criterion": "Finding absence is interpreted only after coverage is demonstrated; tier-dependent gaps have compensating evidence.",
+    "falsification": "An empty finding list comes from a location without the organization's findings or a disabled detector.",
+    "required_evidence": [
+      "SCC configuration export",
+      "coverage matrix",
+      "detector status"
+    ],
+    "operations": [
+      "scc",
+      "org_assets",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/security-command-center/docs/service-tiers",
+      "https://docs.cloud.google.com/security-command-center/docs/security-command-center-overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "SEC-02",
+    "domain": "SEC",
+    "title": "Review finding triage and suppression",
+    "objective": "Review finding triage and suppression",
+    "owner": "Security operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of detection and incident response; document approved exclusions and service absence.",
+    "procedure": "Sample active findings, muted records and ticket links. Evaluate severity, exploitability, asset criticality, owner, age and suppression justification.",
+    "criterion": "Material findings receive timely owned decisions under approved response targets.",
+    "falsification": "A long-lived mute hides a recurring public exposure with no expiry or risk acceptance.",
+    "required_evidence": [
+      "triage queue",
+      "mute rules",
+      "ticket samples"
+    ],
+    "operations": [
+      "scc",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/security-command-center/docs/review-manage-findings",
+      "https://docs.cloud.google.com/security-command-center/docs/how-to-mute-findings"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "SEC-03",
+    "domain": "SEC",
+    "title": "Validate detection use cases",
+    "objective": "Validate detection use cases",
+    "owner": "Security operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of detection and incident response; document approved exclusions and service absence.",
+    "procedure": "Map priority threats to required logs, analytics, alert routes and past incident or exercise records. Inspect existing test results rather than injecting attacks.",
+    "criterion": "The agreed use cases have demonstrated signal delivery and response evidence.",
+    "falsification": "A detection rule is enabled but depends on a disabled Data Access log source.",
+    "required_evidence": [
+      "detection catalog",
+      "prior exercise results",
+      "alert routing export"
+    ],
+    "operations": [
+      "audit_logs",
+      "log_metrics",
+      "scc"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview",
+      "https://docs.cloud.google.com/logging/docs/alerting/log-based-alerts"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "SEC-04",
+    "domain": "SEC",
+    "title": "Assess incident readiness and containment authority",
+    "objective": "Assess incident readiness and containment authority",
+    "owner": "Security operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of detection and incident response; document approved exclusions and service absence.",
+    "procedure": "Review contacts, evidence preservation, organization access, service-account revocation and network isolation procedures. Compare responsibilities against a previous incident or tabletop.",
+    "criterion": "Responders can identify authorized decision makers and required access during the stated scenario.",
+    "falsification": "A responder's emergency credentials depend on the affected identity service or cannot access the evidence project.",
+    "required_evidence": [
+      "incident plan",
+      "contact roster",
+      "tabletop report"
+    ],
+    "operations": [
+      "org_iam",
+      "asset_iam",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/blueprints/security-foundations/operation-best-practices",
+      "https://docs.cloud.google.com/docs/security/overview/whitepaper"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "SEC-05",
+    "domain": "SEC",
+    "title": "Review incident lessons and closure",
+    "objective": "Review incident lessons and closure",
+    "owner": "Security operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of detection and incident response; document approved exclusions and service absence.",
+    "procedure": "Trace a sample of historical incidents through scope, root-cause evidence, notification decisions and verified corrective actions. Compare recurring SCC findings and logs.",
+    "criterion": "Closure includes validation of the failed control and documented residual risk.",
+    "falsification": "A closed incident recurs with the same underlying access path.",
+    "required_evidence": [
+      "incident sample",
+      "postmortems",
+      "closure evidence"
+    ],
+    "operations": [
+      "scc",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/operational-excellence/learn-from-failures"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "BCP-01",
+    "domain": "BCP",
+    "title": "Map recovery objectives to dependencies",
+    "objective": "Map recovery objectives to dependencies",
+    "owner": "Business continuity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of business continuity and recovery; document approved exclusions and service absence.",
+    "procedure": "Join critical services to data stores, identities, keys, DNS, networking and provider dependencies. Obtain business-approved RPO and RTO, including data-loss tolerance.",
+    "criterion": "Recovery objectives cover the complete service chain and have accountable owners.",
+    "falsification": "A database meets its RTO while identity or DNS recovery prevents the business application from operating.",
+    "required_evidence": [
+      "business impact analysis",
+      "dependency map",
+      "approved RPO/RTO"
+    ],
+    "operations": [
+      "assets",
+      "billing_link"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+      "https://docs.cloud.google.com/architecture/framework/reliability"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "BCP-02",
+    "domain": "BCP",
+    "title": "Review backup coverage and immutability",
+    "objective": "Review backup coverage and immutability",
+    "owner": "Business continuity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of business continuity and recovery; document approved exclusions and service absence.",
+    "procedure": "Reconcile data-bearing resources with snapshot, SQL backup, GKE backup and Backup and DR metadata. Inspect retention, separation, vault protection and administration.",
+    "criterion": "All required data has a mapped backup mechanism and approved protection from common administrative failure.",
+    "falsification": "The same compromised administrator can erase production data and every retained backup.",
+    "required_evidence": [
+      "backup coverage matrix",
+      "vault settings export",
+      "administrator review"
+    ],
+    "operations": [
+      "snapshots",
+      "schedules",
+      "sql_backups",
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault",
+      "https://docs.cloud.google.com/compute/docs/disks/scheduled-snapshots"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "BCP-03",
+    "domain": "BCP",
+    "title": "Assess restore evidence",
+    "objective": "Assess restore evidence",
+    "owner": "Business continuity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of business continuity and recovery; document approved exclusions and service absence.",
+    "procedure": "Read existing backup metadata and hash supplied prior restore reports. Review restored scope, timestamp, data integrity checks, elapsed time and business acceptance.",
+    "criterion": "Prior restore evidence demonstrates the agreed objective for the sampled system; missing exercises remain a gap.",
+    "falsification": "A report says successful but omits application integrity checks or restores only an empty database.",
+    "required_evidence": [
+      "dated restore reports",
+      "integrity checks",
+      "business sign-off"
+    ],
+    "operations": [
+      "snapshots",
+      "sql_backups",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+      "https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restoring"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "BCP-04",
+    "domain": "BCP",
+    "title": "Review regional and zonal failure readiness",
+    "objective": "Review regional and zonal failure readiness",
+    "owner": "Business continuity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of business continuity and recovery; document approved exclusions and service absence.",
+    "procedure": "Inspect multi-zone or regional configurations and compare capacity, quotas and dependencies to the failover design. Evaluate existing exercises and their assumptions.",
+    "criterion": "The adopted failure scenario is covered by realistic capacity and independent dependencies.",
+    "falsification": "A secondary region shares a key, network or quota bottleneck that prevents recovery.",
+    "required_evidence": [
+      "failover design",
+      "capacity evidence",
+      "prior exercise"
+    ],
+    "operations": [
+      "instances",
+      "clusters",
+      "sql",
+      "project_info"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/reliability/design-scale-high-availability"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "BCP-05",
+    "domain": "BCP",
+    "title": "Assess recovery operations and ownership",
+    "objective": "Assess recovery operations and ownership",
+    "owner": "Business continuity lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of business continuity and recovery; document approved exclusions and service absence.",
+    "procedure": "Review recovery runbooks, access prerequisites, communications and retrospective improvements. Verify named owners can locate retained evidence and necessary approvals.",
+    "criterion": "Runbooks remain usable under the scenario and material exercise findings are resolved or accepted.",
+    "falsification": "An offline recovery step requires a console or repository available only in the failed environment.",
+    "required_evidence": [
+      "runbook review",
+      "access checklist",
+      "exercise action log"
+    ],
+    "operations": [
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DEV-01",
+    "domain": "DEV",
+    "title": "Review source and build trigger trust",
+    "objective": "Review source and build trigger trust",
+    "owner": "DevSecOps lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of software delivery and supply chain; document approved exclusions and service absence.",
+    "procedure": "Inspect Cloud Build triggers, event filters, approval settings, repository connections and execution identities. Reconcile branch protection and contributor permissions from the source platform.",
+    "criterion": "Untrusted changes cannot silently obtain production deployment authority through the approved pipeline.",
+    "falsification": "A pull request can edit the pipeline that runs with a production service account.",
+    "required_evidence": [
+      "repository protection export",
+      "pipeline design",
+      "trigger approvals"
+    ],
+    "operations": [
+      "build_triggers",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/build/docs/securing-builds/gate-builds-on-approval"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DEV-02",
+    "domain": "DEV",
+    "title": "Assess build identity and secrets",
+    "objective": "Assess build identity and secrets",
+    "owner": "DevSecOps lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of software delivery and supply chain; document approved exclusions and service absence.",
+    "procedure": "Review build service accounts, worker pools, network access and secret references. Inspect a bounded sample of historical builds without triggering builds.",
+    "criterion": "Build privileges and secret availability are appropriate to repository trust and deployment purpose.",
+    "falsification": "An untrusted build can impersonate the same identity that deploys production.",
+    "required_evidence": [
+      "build configuration export",
+      "secret mapping",
+      "identity review"
+    ],
+    "operations": [
+      "builds",
+      "build_triggers",
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/build/docs/securing-builds/configure-access-for-cloud-build-service-account",
+      "https://docs.cloud.google.com/build/docs/securing-builds/use-secrets"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DEV-03",
+    "domain": "DEV",
+    "title": "Review artifact access and vulnerability governance",
+    "objective": "Review artifact access and vulnerability governance",
+    "owner": "DevSecOps lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of software delivery and supply chain; document approved exclusions and service absence.",
+    "procedure": "Inspect repository locations, format, IAM and cleanup policies; obtain scan status, SBOM and exception evidence for deployed digests.",
+    "criterion": "Deployed artifacts have attributable provenance and reviewed vulnerabilities under the adopted policy.",
+    "falsification": "A clean repository summary excludes the exact digest running in production.",
+    "required_evidence": [
+      "deployed digest register",
+      "scan export",
+      "SBOM",
+      "exceptions"
+    ],
+    "operations": [
+      "repositories",
+      "asset_iam",
+      "clusters",
+      "run_services"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/artifact-registry/docs/access-control",
+      "https://docs.cloud.google.com/artifact-analysis/docs/container-scanning-overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DEV-04",
+    "domain": "DEV",
+    "title": "Assess deployment approvals and admission",
+    "objective": "Assess deployment approvals and admission",
+    "owner": "DevSecOps lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of software delivery and supply chain; document approved exclusions and service absence.",
+    "procedure": "Inspect delivery pipelines, Binary Authorization policy and approved attestor evidence. Trace one deployed artifact to source, build, approval and admission result.",
+    "criterion": "Production admission and approval requirements are effective, with controlled break-glass use.",
+    "falsification": "Policy exists but enforcement permits all images or a production target bypasses the pipeline.",
+    "required_evidence": [
+      "release sample",
+      "attestation metadata",
+      "admission results"
+    ],
+    "operations": [
+      "deploy",
+      "binary",
+      "clusters",
+      "run_services"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/binary-authorization/docs/overview",
+      "https://docs.cloud.google.com/deploy/docs/promote-release"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "DEV-05",
+    "domain": "DEV",
+    "title": "Review infrastructure drift and change evidence",
+    "objective": "Review infrastructure drift and change evidence",
+    "owner": "DevSecOps lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of software delivery and supply chain; document approved exclusions and service absence.",
+    "procedure": "Compare current resource exports with approved infrastructure-as-code state and change records. Trace risky IAM, firewall and policy changes in the audit sample.",
+    "criterion": "Material drift is identified, owned and reconciled to approved changes.",
+    "falsification": "A console change weakens a guardrail while the repository still shows the compliant setting.",
+    "required_evidence": [
+      "IaC export",
+      "drift report",
+      "change sample"
+    ],
+    "operations": [
+      "assets",
+      "audit_logs",
+      "effective_policy"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/blueprints/security-foundations",
+      "https://docs.cloud.google.com/docs/terraform/best-practices/general-style-structure"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "AI-01",
+    "domain": "AI",
+    "title": "Inventory AI services and accountable uses",
+    "objective": "Inventory AI services and accountable uses",
+    "owner": "AI platform and data governance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of ai and agent governance; document approved exclusions and service absence.",
+    "procedure": "Inventory Vertex AI endpoints, models and datasets across approved regions; reconcile managed generative services, agent runtimes and external model integrations from application records.",
+    "criterion": "All material AI uses have owners, data classifications, model/provider records and approved purposes.",
+    "falsification": "An application calls a managed model API without a dedicated endpoint and is missed by endpoint inventory.",
+    "required_evidence": [
+      "AI use-case register",
+      "provider inventory",
+      "application data flow"
+    ],
+    "operations": [
+      "ai_endpoints",
+      "ai_models",
+      "ai_datasets",
+      "services",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vertex-ai/docs/start/introduction-unified-platform",
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "AI-02",
+    "domain": "AI",
+    "title": "Assess AI data use and retention",
+    "objective": "Assess AI data use and retention",
+    "owner": "AI platform and data governance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of ai and agent governance; document approved exclusions and service absence.",
+    "procedure": "Review model-specific data governance, prompt logging, grounding, caches, tuning data and retention settings against the actual contract and feature. Do not equate training restrictions with zero retention.",
+    "criterion": "Approved data handling addresses each enabled feature and provider, with documented exceptions.",
+    "falsification": "A zero-retention assertion overlooks grounding, abuse-monitoring or optional logging behavior.",
+    "required_evidence": [
+      "feature and retention matrix",
+      "contracts",
+      "data approvals"
+    ],
+    "operations": [
+      "ai_datasets",
+      "assets",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/data-governance",
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/vertex-ai-zero-data-retention"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "AI-03",
+    "domain": "AI",
+    "title": "Review AI endpoint and runtime access",
+    "objective": "Review AI endpoint and runtime access",
+    "owner": "AI platform and data governance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of ai and agent governance; document approved exclusions and service absence.",
+    "procedure": "Inspect endpoint networking, IAM, service identities, keys and data-store permissions. Reconcile who can deploy, invoke, tune or change the runtime.",
+    "criterion": "AI service privilege and exposure match the approved use and sensitive-data boundary.",
+    "falsification": "An endpoint deployer can substitute a model that runs under a more privileged identity.",
+    "required_evidence": [
+      "AI access review",
+      "endpoint architecture",
+      "runtime identity mapping"
+    ],
+    "operations": [
+      "ai_endpoints",
+      "asset_iam",
+      "service_accounts"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vertex-ai/docs/general/access-control",
+      "https://docs.cloud.google.com/vertex-ai/docs/general/vpc-service-controls"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "AI-04",
+    "domain": "AI",
+    "title": "Assess agent tools and retrieval boundaries",
+    "objective": "Assess agent tools and retrieval boundaries",
+    "owner": "AI platform and data governance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of ai and agent governance; document approved exclusions and service absence.",
+    "procedure": "Use application-supplied agent manifests, tool definitions, retrieval ACL design and existing evaluation traces. Review delegated identity and approval of consequential actions without invoking tools.",
+    "criterion": "Agents enforce user-specific data access and approved tool authority at execution time.",
+    "falsification": "A prompt or retrieved document can cause a tool to access another user's data or perform an unapproved action.",
+    "required_evidence": [
+      "agent tool inventory",
+      "retrieval ACL evidence",
+      "prior adversarial evaluations"
+    ],
+    "operations": [
+      "assets",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview",
+      "https://docs.cloud.google.com/model-armor/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "AI-05",
+    "domain": "AI",
+    "title": "Review AI evaluation and operational oversight",
+    "objective": "Review AI evaluation and operational oversight",
+    "owner": "AI platform and data governance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of ai and agent governance; document approved exclusions and service absence.",
+    "procedure": "Inspect model/version approvals, evaluation criteria, safety filters, monitoring, rollback and incident records. Sample completed evaluations for representative failure modes.",
+    "criterion": "The production use has approved quality, safety and security acceptance criteria plus monitored failure handling.",
+    "falsification": "A model passes generic quality tests but fails the business's sensitive-data or tool-authorization scenarios.",
+    "required_evidence": [
+      "evaluation reports",
+      "model approvals",
+      "AI incident records"
+    ],
+    "operations": [
+      "ai_models",
+      "ai_endpoints",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview",
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/configure-safety-filters"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "OPS-01",
+    "domain": "OPS",
+    "title": "Assess observability against service objectives",
+    "objective": "Assess observability against service objectives",
+    "owner": "SRE and operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of operational excellence and service health; document approved exclusions and service absence.",
+    "procedure": "Join workload inventory to approved SLIs, SLOs, dashboards, alerts and escalation owners from monitoring exports. Review existing incidents and error budgets.",
+    "criterion": "Critical user journeys have measurable objectives and actionable monitoring.",
+    "falsification": "An infrastructure dashboard is green while the business transaction is unavailable.",
+    "required_evidence": [
+      "SLO register",
+      "monitoring policy export",
+      "incident sample"
+    ],
+    "operations": [
+      "assets",
+      "log_metrics"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/reliability",
+      "https://docs.cloud.google.com/monitoring/slo-monitoring"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "OPS-02",
+    "domain": "OPS",
+    "title": "Review quotas and capacity risk",
+    "objective": "Review quotas and capacity risk",
+    "owner": "SRE and operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of operational excellence and service health; document approved exclusions and service absence.",
+    "procedure": "Inspect project quotas and obtain service-specific regional quota and utilization exports. Compare peak, growth and failover requirements to available headroom.",
+    "criterion": "Approved capacity scenarios are covered by current quota and realistic resource availability.",
+    "falsification": "A failover region has nominal architecture support but insufficient quota or capacity reservations.",
+    "required_evidence": [
+      "quota register",
+      "utilization evidence",
+      "capacity plan"
+    ],
+    "operations": [
+      "project_info",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/docs/quotas/overview",
+      "https://docs.cloud.google.com/compute/docs/regions-zones"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "OPS-03",
+    "domain": "OPS",
+    "title": "Assess maintenance and support lifecycle",
+    "objective": "Assess maintenance and support lifecycle",
+    "owner": "SRE and operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of operational excellence and service health; document approved exclusions and service absence.",
+    "procedure": "Reconcile service versions, runtimes, release channels and dependencies to supported lifecycles. Review maintenance exclusions, support plans and upgrade ownership.",
+    "criterion": "Unsupported or soon-retiring dependencies have an approved transition or exception.",
+    "falsification": "A function runtime or GKE node pool remains unsupported despite a maintained application repository.",
+    "required_evidence": [
+      "support matrix",
+      "upgrade plan",
+      "provider notices"
+    ],
+    "operations": [
+      "clusters",
+      "functions",
+      "sql",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/kubernetes-engine/docs/release-schedule",
+      "https://docs.cloud.google.com/functions/docs/runtime-support"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "OPS-04",
+    "domain": "OPS",
+    "title": "Review operational change and access",
+    "objective": "Review operational change and access",
+    "owner": "SRE and operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of operational excellence and service health; document approved exclusions and service absence.",
+    "procedure": "Trace sampled production changes to approvals, tests, deployment records and post-change verification. Include emergency changes and supplier access.",
+    "criterion": "Changes have accountable authorization and sufficient validation for their risk.",
+    "falsification": "A sensitive console change bypassed normal deployment approval without emergency review.",
+    "required_evidence": [
+      "change samples",
+      "emergency approvals",
+      "supplier access review"
+    ],
+    "operations": [
+      "audit_logs",
+      "builds",
+      "asset_iam"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/operational-excellence/manage-change"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "OPS-05",
+    "domain": "OPS",
+    "title": "Assess service ownership and incident learning",
+    "objective": "Assess service ownership and incident learning",
+    "owner": "SRE and operations lead",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of operational excellence and service health; document approved exclusions and service absence.",
+    "procedure": "Reconcile ownership labels and on-call records with real responders, dependency owners and postmortem actions.",
+    "criterion": "Critical services have current operational owners and improvements tied to recurring failure modes.",
+    "falsification": "A labeled owner has left or a repeated failure has no tracked corrective action.",
+    "required_evidence": [
+      "service catalog",
+      "on-call roster",
+      "postmortem actions"
+    ],
+    "operations": [
+      "project",
+      "assets",
+      "scc"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/operational-excellence/learn-from-failures",
+      "https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "FIN-01",
+    "domain": "FIN",
+    "title": "Reconcile billing and project accountability",
+    "objective": "Reconcile billing and project accountability",
+    "owner": "FinOps and finance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cost governance and billing; document approved exclusions and service absence.",
+    "procedure": "Read billing associations for approved projects and compare with finance-approved account and cost-center records. Billing account scope requires explicit independent approval.",
+    "criterion": "Every billed project has an accountable owner, cost center and approved billing association.",
+    "falsification": "A project absent from the operations register still produces charges.",
+    "required_evidence": [
+      "finance project register",
+      "billing account approvals",
+      "cost allocation"
+    ],
+    "operations": [
+      "billing_link",
+      "project",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account",
+      "https://docs.cloud.google.com/billing/docs/how-to/view-linked"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "FIN-02",
+    "domain": "FIN",
+    "title": "Review budgets and spend control behavior",
+    "objective": "Review budgets and spend control behavior",
+    "owner": "FinOps and finance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cost governance and billing; document approved exclusions and service absence.",
+    "procedure": "Inspect budgets for explicitly approved accounts, filters, thresholds and recipients. Determine whether a budget is alerts-only or a supported spend-cap configuration and inspect actual handling.",
+    "criterion": "Budget behavior and alert response match the adopted cost-control requirement; no generic assumption that every budget caps spending.",
+    "falsification": "An alerts-only threshold is mistaken for an enforced stop, or notification reaches an unattended mailbox.",
+    "required_evidence": [
+      "budget approvals",
+      "notification delivery",
+      "response records"
+    ],
+    "operations": [
+      "budgets",
+      "billing_link"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/billing/docs/how-to/budgets"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "FIN-03",
+    "domain": "FIN",
+    "title": "Assess allocation and cost reporting",
+    "objective": "Assess allocation and cost reporting",
+    "owner": "FinOps and finance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cost governance and billing; document approved exclusions and service absence.",
+    "procedure": "Reconcile labels and tags to approved allocation rules and existing billing-export configuration. Request owner-supplied query results; do not submit BigQuery jobs from the collector.",
+    "criterion": "Material costs can be assigned and reconciled with finance at the agreed level.",
+    "falsification": "Unlabeled shared infrastructure or credits distort the reported cost allocation.",
+    "required_evidence": [
+      "billing-export settings",
+      "allocation report",
+      "finance reconciliation"
+    ],
+    "operations": [
+      "assets",
+      "project",
+      "billing_link"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery",
+      "https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "FIN-04",
+    "domain": "FIN",
+    "title": "Review optimization decisions and commitments",
+    "objective": "Review optimization decisions and commitments",
+    "owner": "FinOps and finance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cost governance and billing; document approved exclusions and service absence.",
+    "procedure": "Compare idle resource and utilization evidence with existing recommendations, commitments and business demand. Validate savings assumptions and contractual terms with finance.",
+    "criterion": "Optimization recommendations account for reliability, commitment coverage and real workload demand.",
+    "falsification": "An idle-looking disaster recovery resource is proposed for removal without its recovery role.",
+    "required_evidence": [
+      "utilization report",
+      "recommendation export",
+      "commitment register"
+    ],
+    "operations": [
+      "instances",
+      "disks",
+      "assets",
+      "project_info"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/recommender/docs/overview",
+      "https://docs.cloud.google.com/billing/docs/how-to/cud-analysis"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "FIN-05",
+    "domain": "FIN",
+    "title": "Assess cost anomalies and abuse readiness",
+    "objective": "Assess cost anomalies and abuse readiness",
+    "owner": "FinOps and finance leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of cost governance and billing; document approved exclusions and service absence.",
+    "procedure": "Correlate spending anomalies, identity activity and public exposure with approved workloads. Review response authority and previous cost incidents.",
+    "criterion": "Unexpected spend has a defined detection and response path with accountable decisions.",
+    "falsification": "A compromised workload can consume large resources before anyone acts on the cost alert.",
+    "required_evidence": [
+      "anomaly history",
+      "cost response procedure",
+      "incident sample"
+    ],
+    "operations": [
+      "budgets",
+      "audit_logs",
+      "scc"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/billing/docs/how-to/manage-anomalies"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "COM-01",
+    "domain": "COM",
+    "title": "Map obligations to system scope",
+    "objective": "Map obligations to system scope",
+    "owner": "Compliance and privacy leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compliance privacy and assurance; document approved exclusions and service absence.",
+    "procedure": "Identify applicable contracts, jurisdictional requirements and adopted frameworks with the organization. Map obligations to services, data, controls and evidence owners rather than assuming provider certification transfers.",
+    "criterion": "Every adopted requirement has an applicability decision and evidence mapping approved by the accountable team.",
+    "falsification": "A provider attestation is offered as proof that customer IAM or retention configuration complies.",
+    "required_evidence": [
+      "obligation register",
+      "scope decisions",
+      "control crosswalk"
+    ],
+    "operations": [
+      "services",
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/security/compliance/overview",
+      "https://docs.cloud.google.com/architecture/framework/security"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "COM-02",
+    "domain": "COM",
+    "title": "Assess classification and data discovery",
+    "objective": "Assess classification and data discovery",
+    "owner": "Compliance and privacy leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compliance privacy and assurance; document approved exclusions and service absence.",
+    "procedure": "Compare data classification and existing discovery/profile results with storage, databases, datasets and AI inventories. Inspect coverage, location, job recency and exclusions without initiating scans.",
+    "criterion": "Classification covers the material data population, with explicit unsupported or unscanned areas.",
+    "falsification": "A current discovery dashboard excludes a new project, unstructured store or encrypted dataset.",
+    "required_evidence": [
+      "classification register",
+      "discovery profile export",
+      "coverage reconciliation"
+    ],
+    "operations": [
+      "assets",
+      "buckets",
+      "ai_datasets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/sensitive-data-protection/docs/data-profiles"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "COM-03",
+    "domain": "COM",
+    "title": "Review privacy lifecycle and deletion evidence",
+    "objective": "Review privacy lifecycle and deletion evidence",
+    "owner": "Compliance and privacy leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compliance privacy and assurance; document approved exclusions and service absence.",
+    "procedure": "Trace selected data flows through collection, purpose, sharing, retention, deletion and backups using owner-provided records. Resolve legal hold and recovery obligations with the accountable team.",
+    "criterion": "The adopted privacy requirements are supported across copies and processors; technical settings alone do not prove legal compliance.",
+    "falsification": "A deleted primary record persists in extracts, logs or a downstream AI dataset without an approved retention basis.",
+    "required_evidence": [
+      "data-flow map",
+      "deletion request samples",
+      "processor register"
+    ],
+    "operations": [
+      "assets",
+      "buckets",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/security/compliance/gdpr",
+      "https://docs.cloud.google.com/storage/docs/lifecycle"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "COM-04",
+    "domain": "COM",
+    "title": "Assess regulated workload controls",
+    "objective": "Assess regulated workload controls",
+    "owner": "Compliance and privacy leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compliance privacy and assurance; document approved exclusions and service absence.",
+    "procedure": "Identify Assured Workloads, access approvals, transparency logs, regional restrictions and contractual support commitments where applicable. Inspect actual control package and exceptions.",
+    "criterion": "Claims about sovereign or regulated operation match deployed controls, service eligibility and contract terms.",
+    "falsification": "A project label claims a regulated package while the workload or service is outside its supported boundary.",
+    "required_evidence": [
+      "control-package export",
+      "contracts",
+      "access approval records"
+    ],
+    "operations": [
+      "assets",
+      "effective_policy",
+      "audit_logs"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/assured-workloads/docs/overview",
+      "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+      "https://docs.cloud.google.com/assured-workloads/access-transparency/docs/overview"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  },
+  {
+    "id": "COM-05",
+    "domain": "COM",
+    "title": "Review audit evidence and assurance closure",
+    "objective": "Review audit evidence and assurance closure",
+    "owner": "Compliance and privacy leads",
+    "priority": "Risk-based; set after business-impact review",
+    "applicability": "All in-scope uses of compliance privacy and assurance; document approved exclusions and service absence.",
+    "procedure": "Check findings against criteria, affected population, reproducible evidence and contrary explanations. Require owners, agreed actions, due dates, risk acceptance and independent retest before closure.",
+    "criterion": "The report distinguishes observed facts, inference, limitations and management decisions; no unsupported compliance claim remains.",
+    "falsification": "A high-severity finding relies on truncated data or is marked closed after a change ticket without retest evidence.",
+    "required_evidence": [
+      "finding register",
+      "quality review",
+      "management responses",
+      "closure evidence"
+    ],
+    "operations": [
+      "assets"
+    ],
+    "sources": [
+      "https://docs.cloud.google.com/architecture/framework/security",
+      "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final"
+    ],
+    "remediation": "Agree a change with the service owner against the failed criterion, assess dependencies and rollback, implement through change control, then obtain independent retest evidence. Collection scripts do not remediate.",
+    "cadence": "At initial engagement and material change; recurring interval follows the approved risk plan."
+  }
+]

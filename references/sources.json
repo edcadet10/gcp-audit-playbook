@@ -1,0 +1,2351 @@
+[
+  {
+    "url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+    "final_url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+    "status": 200,
+    "title": "Cloud Controls Matrix | CSA",
+    "text_chars": 4581,
+    "cache": "cd989c6a20813252.txt",
+    "retrieved": "2026-10-14T04:36:07.339922+00:00"
+  },
+  {
+    "url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+    "final_url": "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final",
+    "status": 200,
+    "title": "SP 800-53A Rev. 5, Assessing Security and Privacy Controls in Information Systems and Organizations | CSRC",
+    "text_chars": 5990,
+    "cache": "47b5320ad80cbfac.txt",
+    "retrieved": "2026-10-14T04:36:07.436006+00:00"
+  },
+  {
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "final_url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "status": 200,
+    "title": "SP 800-61 Rev. 3, Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile | CSRC",
+    "text_chars": 4874,
+    "cache": "f53ed62dd159700c.txt",
+    "retrieved": "2026-10-14T04:36:07.664206+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/alloydb/docs/overview",
+    "final_url": "https://docs.cloud.google.com/alloydb/docs/overview",
+    "status": 200,
+    "title": "AlloyDB overview \u00a0|\u00a0 AlloyDB for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 14955,
+    "cache": "ef1b5cd0498e79b5.txt",
+    "retrieved": "2026-10-14T04:36:08.075805+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/blueprints/security-foundations",
+    "final_url": "https://docs.cloud.google.com/architecture/blueprints/security-foundations",
+    "status": 200,
+    "title": "Enterprise foundations blueprint \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7436,
+    "cache": "28ab30478fe1dc46.txt",
+    "retrieved": "2026-10-14T04:36:07.601320+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/blueprints/security-foundations/operation-best-practices",
+    "final_url": "https://docs.cloud.google.com/architecture/blueprints/security-foundations/operation-best-practices",
+    "status": 200,
+    "title": "Operations best practices \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 23465,
+    "cache": "51f970a522c6e00a.txt",
+    "retrieved": "2026-10-14T04:36:07.662446+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+    "final_url": "https://docs.cloud.google.com/architecture/dr-scenarios-planning-guide",
+    "status": 200,
+    "title": "Disaster recovery planning guide \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18907,
+    "cache": "aefdeb7524e0c672.txt",
+    "retrieved": "2026-10-14T04:36:07.727581+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/framework/operational-excellence/learn-from-failures",
+    "final_url": "https://docs.cloud.google.com/architecture/framework/operational-excellence",
+    "status": 200,
+    "title": "Well-Architected Framework: Operational excellence pillar \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6023,
+    "cache": "3a624e32aea0e24a.txt",
+    "retrieved": "2026-10-14T04:36:08.218935+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/framework/operational-excellence/manage-change",
+    "final_url": "https://docs.cloud.google.com/architecture/framework/operational-excellence",
+    "status": 200,
+    "title": "Well-Architected Framework: Operational excellence pillar \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6023,
+    "cache": "1c598a087ca793f1.txt",
+    "retrieved": "2026-10-14T04:36:08.397906+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/framework/reliability",
+    "final_url": "https://docs.cloud.google.com/architecture/framework/reliability",
+    "status": 200,
+    "title": "Well-Architected Framework: Reliability pillar \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7890,
+    "cache": "818bfcd73d158c3d.txt",
+    "retrieved": "2026-10-14T04:36:07.849203+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/framework/reliability/design-scale-high-availability",
+    "final_url": "https://docs.cloud.google.com/architecture/framework/reliability/build-highly-available-systems",
+    "status": 200,
+    "title": "Build highly available systems through resource redundancy \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3379,
+    "cache": "bad777a6438d30e3.txt",
+    "retrieved": "2026-10-14T04:36:08.274840+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/framework/security",
+    "final_url": "https://docs.cloud.google.com/architecture/framework/security",
+    "status": 200,
+    "title": "Well-Architected Framework: Security, privacy, and compliance pillar \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10602,
+    "cache": "71a692ca23a01cfd.txt",
+    "retrieved": "2026-10-14T04:36:08.193087+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/framework/security/shared-responsibility-shared-fate",
+    "final_url": "https://docs.cloud.google.com/architecture/framework/security/shared-responsibility-shared-fate",
+    "status": 200,
+    "title": "Shared responsibilities and shared fate on Google Cloud \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 17567,
+    "cache": "f9fed127fc546ac4.txt",
+    "retrieved": "2026-10-14T04:36:09.404700+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/architecture/landing-zones/decide-resource-hierarchy",
+    "final_url": "https://docs.cloud.google.com/architecture/landing-zones/decide-resource-hierarchy",
+    "status": 200,
+    "title": "Decide a resource hierarchy for your Google Cloud landing zone \u00a0|\u00a0 Cloud Architecture Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16483,
+    "cache": "952666e7f01da34b.txt",
+    "retrieved": "2026-10-14T04:36:08.219948+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+    "final_url": "https://docs.cloud.google.com/armor/docs/security-policy-overview",
+    "status": 200,
+    "title": "Security policy overview \u00a0|\u00a0 Google Cloud Armor \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 31382,
+    "cache": "2cd3fc0b5b2310f9.txt",
+    "retrieved": "2026-10-14T04:36:08.264817+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/artifact-analysis/docs/container-scanning-overview",
+    "final_url": "https://docs.cloud.google.com/artifact-analysis/docs/container-scanning-overview",
+    "status": 200,
+    "title": "Container scanning overview \u00a0|\u00a0 Artifact Analysis \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13195,
+    "cache": "6317907bf9ce9b3a.txt",
+    "retrieved": "2026-10-14T04:36:08.222342+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/artifact-registry/docs/access-control",
+    "final_url": "https://docs.cloud.google.com/artifact-registry/docs/access-control",
+    "status": 200,
+    "title": "Access control with IAM \u00a0|\u00a0 Artifact Registry \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 32168,
+    "cache": "101f110623343389.txt",
+    "retrieved": "2026-10-14T04:36:09.134903+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/asset-inventory/docs/asset-types",
+    "final_url": "https://docs.cloud.google.com/asset-inventory/docs/asset-types",
+    "status": 200,
+    "title": "Asset types \u00a0|\u00a0 Cloud Asset Inventory \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 55281,
+    "cache": "c438a01660eb081e.txt",
+    "retrieved": "2026-10-14T04:36:09.538913+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/asset-inventory/docs/roles-permissions",
+    "final_url": "https://docs.cloud.google.com/asset-inventory/docs/roles-permissions",
+    "status": 200,
+    "title": "Roles and permissions \u00a0|\u00a0 Cloud Asset Inventory \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 15090,
+    "cache": "52d1c3ea0f26272b.txt",
+    "retrieved": "2026-10-14T04:36:08.561647+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+    "final_url": "https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview",
+    "status": 200,
+    "title": "Overview of Access Approval \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8390,
+    "cache": "bdeef1b6afaf5948.txt",
+    "retrieved": "2026-10-14T04:36:08.817802+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/assured-workloads/access-transparency/docs/overview",
+    "final_url": "https://docs.cloud.google.com/assured-workloads/access-transparency/docs/overview",
+    "status": 200,
+    "title": "Overview of Access Transparency \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5758,
+    "cache": "7a59f4325aa18764.txt",
+    "retrieved": "2026-10-14T04:36:08.603649+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/assured-workloads/docs/overview",
+    "final_url": "https://docs.cloud.google.com/assured-workloads/docs/overview",
+    "status": 200,
+    "title": "Overview of Assured Workloads \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 12430,
+    "cache": "9841e232edd5924f.txt",
+    "retrieved": "2026-10-14T04:36:08.928154+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault",
+    "final_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault",
+    "status": 200,
+    "title": "Backup vaults for immutable and indelible backups \u00a0|\u00a0 Backup and DR \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 15046,
+    "cache": "f84484cacc5ad228.txt",
+    "retrieved": "2026-10-14T04:36:08.957467+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigquery/docs/authorized-views",
+    "final_url": "https://docs.cloud.google.com/bigquery/docs/authorized-views",
+    "status": 200,
+    "title": "Authorized views \u00a0|\u00a0 BigQuery \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 20653,
+    "cache": "943361b67988f822.txt",
+    "retrieved": "2026-10-14T04:36:08.850752+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigquery/docs/column-level-security-intro",
+    "final_url": "https://docs.cloud.google.com/bigquery/docs/column-level-security-intro",
+    "status": 200,
+    "title": "Introduction to column-level access control \u00a0|\u00a0 BigQuery \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 19574,
+    "cache": "5743b95a7f49499f.txt",
+    "retrieved": "2026-10-14T04:36:09.174168+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigquery/docs/exporting-data",
+    "final_url": "https://docs.cloud.google.com/bigquery/docs/exporting-data",
+    "status": 200,
+    "title": "Export table data to Cloud Storage \u00a0|\u00a0 BigQuery \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 51629,
+    "cache": "257f4fc4900576f4.txt",
+    "retrieved": "2026-10-14T04:36:09.468090+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigquery/docs/managing-datasets",
+    "final_url": "https://docs.cloud.google.com/bigquery/docs/managing-datasets",
+    "status": 200,
+    "title": "Manage datasets \u00a0|\u00a0 BigQuery \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 38082,
+    "cache": "bba3d5d1354294d2.txt",
+    "retrieved": "2026-10-14T04:36:09.347492+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigquery/docs/reference/auditlogs",
+    "final_url": "https://docs.cloud.google.com/bigquery/docs/reference/auditlogs",
+    "status": 200,
+    "title": "BigQuery audit logs overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 31495,
+    "cache": "118453e6656f3155.txt",
+    "retrieved": "2026-10-14T04:36:09.410419+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigquery/docs/row-level-security-intro",
+    "final_url": "https://docs.cloud.google.com/bigquery/docs/row-level-security-intro",
+    "status": 200,
+    "title": "Introduction to BigQuery row-level security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18000,
+    "cache": "7cb9531f65ddb79b.txt",
+    "retrieved": "2026-10-14T04:36:09.438294+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/bigtable/docs/access-control",
+    "final_url": "https://docs.cloud.google.com/bigtable/docs/access-control",
+    "status": 200,
+    "title": "Bigtable access control with IAM \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 33152,
+    "cache": "f5e6c8887b059716.txt",
+    "retrieved": "2026-10-14T04:36:10.333633+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+    "final_url": "https://docs.cloud.google.com/billing/docs/how-to/budgets",
+    "status": 200,
+    "title": "Create, edit, or delete budgets and budget alerts \u00a0|\u00a0 Cloud Billing \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 60920,
+    "cache": "b5c70408ff465b29.txt",
+    "retrieved": "2026-10-14T04:36:09.593710+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/cud-analysis",
+    "final_url": "https://docs.cloud.google.com/billing/docs/how-to/cud-analysis",
+    "status": 200,
+    "title": "Optimize costs with Committed Use Discounts \u00a0|\u00a0 Cloud Billing \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2352,
+    "cache": "a11d864b80d538cb.txt",
+    "retrieved": "2026-10-14T04:36:09.749536+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery",
+    "final_url": "https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery",
+    "status": 200,
+    "title": "Export Cloud Billing data to BigQuery \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 19161,
+    "cache": "f7d2d5b5a9e133f2.txt",
+    "retrieved": "2026-10-14T04:36:10.721990+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/manage-anomalies",
+    "final_url": "https://docs.cloud.google.com/billing/docs/how-to/manage-anomalies",
+    "status": 200,
+    "title": "View and manage cost anomalies \u00a0|\u00a0 Cloud Billing \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 19352,
+    "cache": "ddabbe85a1f1558e.txt",
+    "retrieved": "2026-10-14T04:36:09.889708+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account",
+    "final_url": "https://docs.cloud.google.com/billing/docs/how-to/manage-billing-account",
+    "status": 200,
+    "title": "Manage your Cloud Billing account \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8293,
+    "cache": "8ad77788d5991515.txt",
+    "retrieved": "2026-10-14T04:36:09.880095+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/view-linked",
+    "final_url": "https://docs.cloud.google.com/billing/docs/how-to/view-linked",
+    "status": 200,
+    "title": "View projects linked to Cloud Billing accounts \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4560,
+    "cache": "608674c8d9d09ccc.txt",
+    "retrieved": "2026-10-14T04:36:10.085893+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/binary-authorization/docs/overview",
+    "final_url": "https://docs.cloud.google.com/binary-authorization/docs/overview",
+    "status": 200,
+    "title": "Binary Authorization overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10473,
+    "cache": "f1bbc271f919d590.txt",
+    "retrieved": "2026-10-14T04:36:10.587240+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/build/docs/securing-builds/configure-access-for-cloud-build-service-account",
+    "final_url": "https://docs.cloud.google.com/build/docs/securing-builds/configure-access-for-cloud-build-service-account",
+    "status": 200,
+    "title": "Configure access for the default Cloud Build service account \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5045,
+    "cache": "cb134e8e1b7174ae.txt",
+    "retrieved": "2026-10-14T04:36:10.104644+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/build/docs/securing-builds/gate-builds-on-approval",
+    "final_url": "https://docs.cloud.google.com/build/docs/securing-builds/gate-builds-on-approval",
+    "status": 200,
+    "title": "Gate builds on approval \u00a0|\u00a0 Cloud Build \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8122,
+    "cache": "58ed12be89c51cd9.txt",
+    "retrieved": "2026-10-14T04:36:10.595260+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/build/docs/securing-builds/use-secrets",
+    "final_url": "https://docs.cloud.google.com/build/docs/securing-builds/use-secrets",
+    "status": 200,
+    "title": "Use secrets from Secret Manager \u00a0|\u00a0 Cloud Build \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13092,
+    "cache": "2bca125f65298623.txt",
+    "retrieved": "2026-10-14T04:36:10.094902+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/access/service-accounts",
+    "final_url": "https://docs.cloud.google.com/compute/docs/access/service-accounts",
+    "status": 200,
+    "title": "Service accounts \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 17663,
+    "cache": "da101bd47b6f2d26.txt",
+    "retrieved": "2026-10-14T04:36:10.521819+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption",
+    "final_url": "https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption",
+    "status": 200,
+    "title": "Protect resources with Cloud KMS keys \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 48595,
+    "cache": "f95ac83751c4306b.txt",
+    "retrieved": "2026-10-14T04:36:11.201679+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/disks/scheduled-snapshots",
+    "final_url": "https://docs.cloud.google.com/compute/docs/disks/scheduled-snapshots",
+    "status": 200,
+    "title": "Create schedules for disk snapshots \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 46245,
+    "cache": "d1ed28c32563ac43.txt",
+    "retrieved": "2026-10-14T04:36:12.550315+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/images/image-management-best-practices",
+    "final_url": "https://docs.cloud.google.com/compute/docs/images/image-management-best-practices",
+    "status": 200,
+    "title": "Image management best practices \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11540,
+    "cache": "ffadfb40cdad4867.txt",
+    "retrieved": "2026-10-14T04:36:11.046559+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/instances/preventing-accidental-vm-deletion",
+    "final_url": "https://docs.cloud.google.com/compute/docs/instances/preventing-accidental-vm-deletion",
+    "status": 200,
+    "title": "Prevent accidental VM deletion \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 39964,
+    "cache": "c32495f5b4e12dca.txt",
+    "retrieved": "2026-10-14T04:36:10.759149+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/metadata/overview",
+    "final_url": "https://docs.cloud.google.com/compute/docs/metadata/overview",
+    "status": 200,
+    "title": "About VM metadata \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18484,
+    "cache": "e75aedd46ef06ec2.txt",
+    "retrieved": "2026-10-14T04:36:10.735927+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/oslogin",
+    "final_url": "https://docs.cloud.google.com/compute/docs/oslogin",
+    "status": 200,
+    "title": "About OS Login \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6962,
+    "cache": "a2096f4610bde738.txt",
+    "retrieved": "2026-10-14T04:36:10.972288+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/oslogin/set-up-oslogin",
+    "final_url": "https://docs.cloud.google.com/compute/docs/oslogin/set-up-oslogin",
+    "status": 200,
+    "title": "Set up OS Login \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10378,
+    "cache": "a7e7d085c580ac3c.txt",
+    "retrieved": "2026-10-14T04:36:11.208512+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/docs/regions-zones",
+    "final_url": "https://docs.cloud.google.com/compute/docs/regions-zones",
+    "status": 200,
+    "title": "Regions and zones \u00a0|\u00a0 Compute Engine \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 50072,
+    "cache": "0e0f280d8177fdb5.txt",
+    "retrieved": "2026-10-14T04:36:11.472679+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/shielded-vm/docs/shielded-vm",
+    "final_url": "https://docs.cloud.google.com/compute/shielded-vm/docs/shielded-vm",
+    "status": 200,
+    "title": "Shielded VM overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 28499,
+    "cache": "dfb6f911fb656af6.txt",
+    "retrieved": "2026-10-14T04:36:11.046559+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/vm-manager/docs/overview",
+    "final_url": "https://docs.cloud.google.com/compute/vm-manager/docs/overview",
+    "status": 200,
+    "title": "VM Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5877,
+    "cache": "8813e9e1dff9fc94.txt",
+    "retrieved": "2026-10-14T04:36:11.608998+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/compute/vm-manager/docs/patch",
+    "final_url": "https://docs.cloud.google.com/compute/vm-manager/docs/patch",
+    "status": 200,
+    "title": "About Patch \u00a0|\u00a0 VM Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13548,
+    "cache": "0bd747b321be7163.txt",
+    "retrieved": "2026-10-14T04:36:11.670552+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/deploy/docs/promote-release",
+    "final_url": "https://docs.cloud.google.com/deploy/docs/promote-release",
+    "status": 200,
+    "title": "Promote your release and manage approvals \u00a0|\u00a0 Cloud Deploy \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5992,
+    "cache": "6f5df9f7207182cd.txt",
+    "retrieved": "2026-10-14T04:36:11.308593+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/dns/docs/dnssec",
+    "final_url": "https://docs.cloud.google.com/dns/docs/dnssec",
+    "status": 200,
+    "title": "DNS Security Extensions (DNSSEC) overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5037,
+    "cache": "14c84463f0f1b757.txt",
+    "retrieved": "2026-10-14T04:36:12.184811+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/docs/quotas/overview",
+    "final_url": "https://docs.cloud.google.com/docs/quotas/overview",
+    "status": 200,
+    "title": "Cloud Quotas overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10260,
+    "cache": "0f98279f1912b482.txt",
+    "retrieved": "2026-10-14T04:36:11.962908+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/docs/security/best-practices-continuous-access-to-google-cloud",
+    "final_url": "https://docs.cloud.google.com/docs/security/best-practices-continuous-access-to-google-cloud",
+    "status": 200,
+    "title": "Ensure continuous access to Google Cloud \u00a0|\u00a0 Security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 17678,
+    "cache": "bc566e0ea7e9bf05.txt",
+    "retrieved": "2026-10-14T04:36:11.498981+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/docs/security/overview/whitepaper",
+    "final_url": "https://docs.cloud.google.com/docs/security/overview/whitepaper",
+    "status": 200,
+    "title": "Google security overview \u00a0|\u00a0 Security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 35691,
+    "cache": "993a1b7e4dc53a9e.txt",
+    "retrieved": "2026-10-14T04:36:12.066536+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/docs/terraform/best-practices/general-style-structure",
+    "final_url": "https://docs.cloud.google.com/docs/terraform/best-practices/general-style-structure",
+    "status": 200,
+    "title": "Best practices for general style and structure \u00a0|\u00a0 Terraform on Google Cloud \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10100,
+    "cache": "70b32c6a5c24c168.txt",
+    "retrieved": "2026-10-14T04:36:11.809044+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/firestore/docs/security/overview",
+    "final_url": "https://docs.cloud.google.com/firestore/native/docs/security/iam",
+    "status": 200,
+    "title": "Security for server client libraries \u00a0|\u00a0 Firestore in Native mode \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16465,
+    "cache": "89ae4d9428665e3e.txt",
+    "retrieved": "2026-10-14T04:36:12.094286+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/firewall/docs/firewall-policies-overview",
+    "final_url": "https://docs.cloud.google.com/firewall/docs/firewall-policies-overview",
+    "status": 200,
+    "title": "Firewall policies and rules \u00a0|\u00a0 Cloud Next Generation Firewall \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6104,
+    "cache": "13a7273c78e4ec3f.txt",
+    "retrieved": "2026-10-14T04:36:12.809160+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/firewall/docs/firewalls",
+    "final_url": "https://docs.cloud.google.com/firewall/docs/firewalls",
+    "status": 200,
+    "title": "VPC firewall rules \u00a0|\u00a0 Cloud Next Generation Firewall \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 49154,
+    "cache": "2c8b7ee2152ea24c.txt",
+    "retrieved": "2026-10-14T04:36:12.826269+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/functions/docs/runtime-support",
+    "final_url": "https://docs.cloud.google.com/functions/docs/runtime-support",
+    "status": 200,
+    "title": "Runtime support \u00a0|\u00a0 Cloud Run functions \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11739,
+    "cache": "1454958a57dbb932.txt",
+    "retrieved": "2026-10-14T04:36:12.375722+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/functions/docs/securing/managing-access-iam",
+    "final_url": "https://docs.cloud.google.com/functions/docs/securing/managing-access-iam",
+    "status": 200,
+    "title": "Authorize access with IAM \u00a0|\u00a0 Cloud Run functions \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6576,
+    "cache": "926f7f1f837b2eee.txt",
+    "retrieved": "2026-10-14T04:36:12.273214+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/audit-logging",
+    "final_url": "https://docs.cloud.google.com/iam/docs/audit-logging",
+    "status": 200,
+    "title": "Identity and Access Management audit logging \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 78202,
+    "cache": "090d6a0cce247b15.txt",
+    "retrieved": "2026-10-14T04:36:12.483133+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+    "final_url": "https://docs.cloud.google.com/iam/docs/best-practices-for-managing-service-account-keys",
+    "status": 200,
+    "title": "Best practices for managing service account keys \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 30248,
+    "cache": "aaa1b9e5ec1089fe.txt",
+    "retrieved": "2026-10-14T04:36:15.649856+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/best-practices-service-accounts",
+    "final_url": "https://docs.cloud.google.com/iam/docs/best-practices-service-accounts",
+    "status": 200,
+    "title": "Best practices for using service accounts securely \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 43435,
+    "cache": "a26e2bc17287bc61.txt",
+    "retrieved": "2026-10-14T04:36:13.017888+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+    "final_url": "https://docs.cloud.google.com/iam/docs/conditions-overview",
+    "status": 200,
+    "title": "Overview of IAM Conditions \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 17082,
+    "cache": "22b0ec76d9353151.txt",
+    "retrieved": "2026-10-14T04:36:12.505182+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/creating-managing-service-account-keys",
+    "final_url": "https://docs.cloud.google.com/iam/docs/keys-create-delete",
+    "status": 200,
+    "title": "Create and delete service account keys \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 38503,
+    "cache": "cc79bc1b496b23e3.txt",
+    "retrieved": "2026-10-14T04:36:13.241179+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+    "final_url": "https://docs.cloud.google.com/iam/docs/deny-overview",
+    "status": 200,
+    "title": "Deny policies \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18343,
+    "cache": "a62e888a9222dd82.txt",
+    "retrieved": "2026-10-14T04:36:13.075027+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/groups-in-cloud-console",
+    "final_url": "https://docs.cloud.google.com/iam/docs/groups-in-cloud-console",
+    "status": 200,
+    "title": "Create and manage Google groups in the Google Cloud console \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6392,
+    "cache": "15b5e46eff36e883.txt",
+    "retrieved": "2026-10-14T04:36:13.303955+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+    "final_url": "https://docs.cloud.google.com/iam/docs/pam-overview",
+    "status": 200,
+    "title": "Privileged Access Manager overview \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16386,
+    "cache": "87b331adc1780ca6.txt",
+    "retrieved": "2026-10-14T04:36:13.167027+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/policy-types",
+    "final_url": "https://docs.cloud.google.com/iam/docs/policy-types",
+    "status": 200,
+    "title": "IAM policy types \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10004,
+    "cache": "6397c9470342cb71.txt",
+    "retrieved": "2026-10-14T04:36:13.203168+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+    "final_url": "https://docs.cloud.google.com/iam/docs/principal-access-boundary-policies",
+    "status": 200,
+    "title": "Principal access boundary policies \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 28496,
+    "cache": "6ba8766f7dd28e27.txt",
+    "retrieved": "2026-10-14T04:36:13.058535+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+    "final_url": "https://docs.cloud.google.com/iam/docs/resource-hierarchy-access-control",
+    "status": 200,
+    "title": "Using resource hierarchy for access control \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11739,
+    "cache": "e8b335ddca55dbc3.txt",
+    "retrieved": "2026-10-14T04:36:13.776410+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/service-account-creds",
+    "final_url": "https://docs.cloud.google.com/iam/docs/service-account-creds",
+    "status": 200,
+    "title": "Service account credentials \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13072,
+    "cache": "44b7ce43dd396917.txt",
+    "retrieved": "2026-10-14T04:36:13.463803+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/service-account-impersonation",
+    "final_url": "https://docs.cloud.google.com/iam/docs/service-account-impersonation",
+    "status": 200,
+    "title": "Service account impersonation \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10260,
+    "cache": "4a96943c1dd302c6.txt",
+    "retrieved": "2026-10-14T04:36:13.470508+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/service-account-permissions",
+    "final_url": "https://docs.cloud.google.com/iam/docs/service-account-permissions",
+    "status": 200,
+    "title": "Roles for service account authentication \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 12243,
+    "cache": "ea07f3b4b2cbe3e2.txt",
+    "retrieved": "2026-10-14T04:36:13.432508+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/understanding-roles",
+    "final_url": "https://docs.cloud.google.com/iam/docs/roles-permissions",
+    "status": 200,
+    "title": "IAM roles and permissions index \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 1736,
+    "cache": "c04b461de08240c9.txt",
+    "retrieved": "2026-10-14T04:36:14.175780+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/workforce-identity-federation",
+    "final_url": "https://docs.cloud.google.com/iam/docs/workforce-identity-federation",
+    "status": 200,
+    "title": "Workforce Identity Federation \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 23538,
+    "cache": "ed80f31b9cba921b.txt",
+    "retrieved": "2026-10-14T04:36:14.560017+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
+    "final_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation",
+    "status": 200,
+    "title": "Workload Identity Federation \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11896,
+    "cache": "0f874cc5b70efefd.txt",
+    "retrieved": "2026-10-14T04:36:13.872021+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+    "final_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines",
+    "status": 200,
+    "title": "Configure Workload Identity Federation with deployment pipelines \u00a0|\u00a0 Identity and Access Management (IAM) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 41061,
+    "cache": "03844cd0246ae133.txt",
+    "retrieved": "2026-10-14T04:36:14.271293+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/iap/docs/using-tcp-forwarding",
+    "final_url": "https://docs.cloud.google.com/iap/docs/using-tcp-forwarding",
+    "status": 200,
+    "title": "Use IAP for TCP forwarding \u00a0|\u00a0 Identity-Aware Proxy \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 21839,
+    "cache": "2c425bc1af2c702c.txt",
+    "retrieved": "2026-10-14T04:36:13.966349+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kms/docs/cmek",
+    "final_url": "https://docs.cloud.google.com/kms/docs/cmek",
+    "status": 200,
+    "title": "Customer-managed encryption keys (CMEK) \u00a0|\u00a0 Cloud Key Management Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 14607,
+    "cache": "66f1f49418df883e.txt",
+    "retrieved": "2026-10-14T04:36:14.686891+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kms/docs/ekm",
+    "final_url": "https://docs.cloud.google.com/kms/docs/ekm",
+    "status": 200,
+    "title": "Cloud External Key Manager \u00a0|\u00a0 Cloud Key Management Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 22484,
+    "cache": "6a244ce3a111db77.txt",
+    "retrieved": "2026-10-14T04:36:14.218533+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kms/docs/iam",
+    "final_url": "https://docs.cloud.google.com/kms/docs/iam",
+    "status": 200,
+    "title": "Access control with IAM \u00a0|\u00a0 Cloud Key Management Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 40103,
+    "cache": "8f139d4d6abe26f1.txt",
+    "retrieved": "2026-10-14T04:36:14.173758+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+    "final_url": "https://docs.cloud.google.com/kms/docs/key-rotation",
+    "status": 200,
+    "title": "Key rotation \u00a0|\u00a0 Cloud Key Management Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5735,
+    "cache": "e52c2a016b2cda78.txt",
+    "retrieved": "2026-10-14T04:36:14.223015+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kms/docs/key-states",
+    "final_url": "https://docs.cloud.google.com/kms/docs/key-states",
+    "status": 200,
+    "title": "Key version states \u00a0|\u00a0 Cloud Key Management Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6821,
+    "cache": "5e3ececcf3708bcc.txt",
+    "retrieved": "2026-10-14T04:36:14.535722+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kms/docs/separation-of-duties",
+    "final_url": "https://docs.cloud.google.com/kms/docs/separation-of-duties",
+    "status": 200,
+    "title": "Separation of duties \u00a0|\u00a0 Cloud Key Management Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7221,
+    "cache": "878843407a5cd7cb.txt",
+    "retrieved": "2026-10-14T04:36:16.893896+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/concepts/backup-for-gke",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/concepts/backup-for-gke",
+    "status": 200,
+    "title": "Backup for GKE overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11347,
+    "cache": "dee3a3da410b55e1.txt",
+    "retrieved": "2026-10-14T04:36:15.025098+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions",
+    "status": 200,
+    "title": "Maintenance windows and exclusions \u00a0|\u00a0 Google Kubernetes Engine (GKE) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 30923,
+    "cache": "5c219394cab76556.txt",
+    "retrieved": "2026-10-14T04:36:14.905295+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/network-isolation",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/network-isolation",
+    "status": 200,
+    "title": "About network isolation in GKE \u00a0|\u00a0 GKE networking \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 22555,
+    "cache": "997eb092cf8805ae.txt",
+    "retrieved": "2026-10-14T04:36:14.829548+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels",
+    "status": 200,
+    "title": "About release channels \u00a0|\u00a0 Google Kubernetes Engine (GKE) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 28284,
+    "cache": "3c4ea98a43093b65.txt",
+    "retrieved": "2026-10-14T04:36:14.784647+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-identity",
+    "status": 200,
+    "title": "About Workload Identity Federation for GKE \u00a0|\u00a0 GKE security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 21649,
+    "cache": "5ec7ea87a8717476.txt",
+    "retrieved": "2026-10-14T04:36:14.837704+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/hardening-your-cluster",
+    "status": 200,
+    "title": "Best practices for hardening your cluster's security \u00a0|\u00a0 GKE security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 39315,
+    "cache": "98bfefed149a5aec.txt",
+    "retrieved": "2026-10-14T04:36:15.058440+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/network-policy",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/network-policy",
+    "status": 200,
+    "title": "Control communication between Pods and Services using network policies \u00a0|\u00a0 GKE networking \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 29652,
+    "cache": "99fca1257b37fe9a.txt",
+    "retrieved": "2026-10-14T04:36:15.326559+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/podsecurityadmission",
+    "status": 200,
+    "title": "Apply predefined Pod-level security policies using PodSecurity \u00a0|\u00a0 GKE security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11599,
+    "cache": "01c5c45ffdc0d5aa.txt",
+    "retrieved": "2026-10-14T04:36:15.432693+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/protecting-cluster-metadata",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/protecting-cluster-metadata",
+    "status": 200,
+    "title": "Protecting cluster metadata \u00a0|\u00a0 Google Kubernetes Engine (GKE) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7111,
+    "cache": "1ab6b9924ec02a6b.txt",
+    "retrieved": "2026-10-14T04:36:15.413952+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control",
+    "status": 200,
+    "title": "Authorize actions in clusters using role-based access control \u00a0|\u00a0 GKE security \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 14940,
+    "cache": "f003b90b59fc3e93.txt",
+    "retrieved": "2026-10-14T04:36:15.219136+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/kubernetes-engine/docs/release-schedule",
+    "final_url": "https://docs.cloud.google.com/kubernetes-engine/docs/release-schedule",
+    "status": 200,
+    "title": "GKE release schedule \u00a0|\u00a0 Google Kubernetes Engine (GKE) \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11010,
+    "cache": "2a5e4b52eaebd6c1.txt",
+    "retrieved": "2026-10-14T04:36:15.642500+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts",
+    "final_url": "https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts",
+    "status": 200,
+    "title": "SSL policies overview \u00a0|\u00a0 Cloud Load Balancing \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 14158,
+    "cache": "723329a31f584c29.txt",
+    "retrieved": "2026-10-14T04:36:16.375731+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/access-control",
+    "final_url": "https://docs.cloud.google.com/logging/docs/access-control",
+    "status": 200,
+    "title": "Access control with IAM \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 25948,
+    "cache": "86f148b7ae2ce928.txt",
+    "retrieved": "2026-10-14T04:36:15.772946+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/alerting/log-based-alerts",
+    "final_url": "https://docs.cloud.google.com/logging/docs/alerting/log-based-alerts",
+    "status": 200,
+    "title": "Configure log-based alerting policies \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 31618,
+    "cache": "e9e7d71cc02e2959.txt",
+    "retrieved": "2026-10-14T04:36:16.358734+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/audit",
+    "final_url": "https://docs.cloud.google.com/logging/docs/audit",
+    "status": 200,
+    "title": "Cloud Audit Logs overview \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 19746,
+    "cache": "c27d52b481121ae0.txt",
+    "retrieved": "2026-10-14T04:36:15.991098+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/audit/best-practices",
+    "final_url": "https://docs.cloud.google.com/logging/docs/audit/best-practices",
+    "status": 200,
+    "title": "Best practices for Cloud Audit Logs \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13378,
+    "cache": "c2ba6675f17641a4.txt",
+    "retrieved": "2026-10-14T04:36:16.113518+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/audit/configure-data-access",
+    "final_url": "https://docs.cloud.google.com/logging/docs/audit/configure-data-access",
+    "status": 200,
+    "title": "Enable Data Access audit logs \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 29565,
+    "cache": "50baf23abacfdcc3.txt",
+    "retrieved": "2026-10-14T04:36:16.085517+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/audit/understanding-audit-logs",
+    "final_url": "https://docs.cloud.google.com/logging/docs/audit/understanding-audit-logs",
+    "status": 200,
+    "title": "Understanding audit logs \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 15623,
+    "cache": "8879fdebeec5668e.txt",
+    "retrieved": "2026-10-14T04:36:15.906536+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/buckets",
+    "final_url": "https://docs.cloud.google.com/logging/docs/buckets",
+    "status": 200,
+    "title": "Configure log buckets \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 41141,
+    "cache": "7ad17bd9432dc94c.txt",
+    "retrieved": "2026-10-14T04:36:16.456034+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/export/aggregated_sinks",
+    "final_url": "https://docs.cloud.google.com/logging/docs/export/aggregated_sinks",
+    "status": 200,
+    "title": "Collate and route organization- and folder-level logs to supported destinations \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 21262,
+    "cache": "6b908712279e9748.txt",
+    "retrieved": "2026-10-14T04:36:16.173768+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/list",
+    "final_url": "https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/list",
+    "status": 200,
+    "title": "Method: entries.list \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6941,
+    "cache": "1503a9641b305804.txt",
+    "retrieved": "2026-10-14T04:36:16.489547+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+    "final_url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+    "status": 200,
+    "title": "Route log entries \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 25107,
+    "cache": "951202423228a935.txt",
+    "retrieved": "2026-10-14T04:36:16.396861+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/storage",
+    "final_url": "https://docs.cloud.google.com/logging/docs/routing/overview",
+    "status": 200,
+    "title": "Route log entries \u00a0|\u00a0 Cloud Logging \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 25107,
+    "cache": "aea5d9e003d2c06f.txt",
+    "retrieved": "2026-10-14T04:36:16.578219+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/logging/docs/view/logging-query-language",
+    "final_url": "https://docs.cloud.google.com/logging/docs/view/logging-query-language",
+    "status": 200,
+    "title": "Logging query language \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 42823,
+    "cache": "57ad995aa09f9bd6.txt",
+    "retrieved": "2026-10-14T04:36:16.637917+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/model-armor/overview",
+    "final_url": "https://docs.cloud.google.com/model-armor/overview",
+    "status": 200,
+    "title": "Model Armor overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 27515,
+    "cache": "4850263c4565abcf.txt",
+    "retrieved": "2026-10-14T04:36:16.986651+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/monitoring/slo-monitoring",
+    "final_url": "https://docs.cloud.google.com/monitoring/slo-monitoring",
+    "status": 200,
+    "title": "Service monitoring \u00a0|\u00a0 Cloud Monitoring \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 1574,
+    "cache": "5e8a53b5b77733c0.txt",
+    "retrieved": "2026-10-14T04:36:16.767183+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/nat/docs/overview",
+    "final_url": "https://docs.cloud.google.com/nat/docs/overview",
+    "status": 200,
+    "title": "Cloud NAT overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8544,
+    "cache": "143d2f61c7b914a2.txt",
+    "retrieved": "2026-10-14T04:36:17.032238+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/overview",
+    "final_url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/overview",
+    "status": 200,
+    "title": "Cloud Interconnect overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18616,
+    "cache": "59078adc24f22b30.txt",
+    "retrieved": "2026-10-14T04:36:17.135542+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/redundancy",
+    "final_url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/dedicated-overview#redundancy",
+    "status": 200,
+    "title": "Dedicated Interconnect overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18221,
+    "cache": "23704c55aadeb69e.txt",
+    "retrieved": "2026-10-14T04:36:17.308042+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/overview",
+    "final_url": "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/overview",
+    "status": 200,
+    "title": "NCC overview \u00a0|\u00a0 Network Connectivity Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 12675,
+    "cache": "8f6178d481dade54.txt",
+    "retrieved": "2026-10-14T04:36:17.530847+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/best-practices",
+    "final_url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/best-practices",
+    "status": 200,
+    "title": "Best practices for Cloud VPN \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6464,
+    "cache": "d4e6cabead3906de.txt",
+    "retrieved": "2026-10-14T04:36:16.945943+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/overview",
+    "final_url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/concepts/overview",
+    "status": 200,
+    "title": "Cloud VPN overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 26538,
+    "cache": "e136e5e13c8794f3.txt",
+    "retrieved": "2026-10-14T04:36:18.049290+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/pubsub/docs/authentication",
+    "final_url": "https://docs.cloud.google.com/pubsub/docs/authentication",
+    "status": 200,
+    "title": "Authenticate to Pub/Sub \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11755,
+    "cache": "f59b4c730af9e59d.txt",
+    "retrieved": "2026-10-14T04:36:18.708184+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/pubsub/docs/subscription-properties",
+    "final_url": "https://docs.cloud.google.com/pubsub/docs/subscription-properties",
+    "status": 200,
+    "title": "Subscription properties \u00a0|\u00a0 Pub/Sub \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8825,
+    "cache": "477a3f53d1c78d41.txt",
+    "retrieved": "2026-10-14T04:36:17.748913+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/recommender/docs/overview",
+    "final_url": "https://docs.cloud.google.com/recommender/docs/whatis-activeassist",
+    "status": 200,
+    "title": "What is Active Assist \u00a0|\u00a0 Recommender \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5451,
+    "cache": "eb7885b8e67203d5.txt",
+    "retrieved": "2026-10-14T04:36:18.283700+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy",
+    "final_url": "https://docs.cloud.google.com/resource-manager/docs/cloud-platform-resource-hierarchy",
+    "status": 200,
+    "title": "About resource hierarchy \u00a0|\u00a0 Resource Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11943,
+    "cache": "3d70c21a9c21d83a.txt",
+    "retrieved": "2026-10-14T04:36:17.388600+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels",
+    "final_url": "https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels",
+    "status": 200,
+    "title": "Create and update labels for projects \u00a0|\u00a0 Resource Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5753,
+    "cache": "ad0c743497d6e5d9.txt",
+    "retrieved": "2026-10-14T04:36:17.810570+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/creating-managing-projects",
+    "final_url": "https://docs.cloud.google.com/resource-manager/docs/creating-managing-projects",
+    "status": 200,
+    "title": "Create projects \u00a0|\u00a0 Resource Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 14366,
+    "cache": "c7d7d4eab8383744.txt",
+    "retrieved": "2026-10-14T04:36:17.525833+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/custom-constraints",
+    "final_url": "https://docs.cloud.google.com/resource-manager/docs/custom-constraints",
+    "status": 200,
+    "title": "Manage resources with custom constraints \u00a0|\u00a0 Resource Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18595,
+    "cache": "644409732528cf71.txt",
+    "retrieved": "2026-10-14T04:36:18.115626+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/defining-locations",
+    "final_url": "https://docs.cloud.google.com/organization-policy/restrict-locations",
+    "status": 200,
+    "title": "Restrict resource locations \u00a0|\u00a0 Organization Policy \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 29417,
+    "cache": "8c1d14d2613113c4.txt",
+    "retrieved": "2026-10-14T04:36:18.401403+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/overview",
+    "final_url": "https://docs.cloud.google.com/organization-policy/overview",
+    "status": 200,
+    "title": "Organization Policy overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 14343,
+    "cache": "cdf3017f86a8173a.txt",
+    "retrieved": "2026-10-14T04:36:18.039531+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/restricting-domains",
+    "final_url": "https://docs.cloud.google.com/organization-policy/restrict-domains",
+    "status": 200,
+    "title": "Restrict identities with domain-restricted sharing \u00a0|\u00a0 Organization Policy \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 32384,
+    "cache": "e9e63bde03b10cc9.txt",
+    "retrieved": "2026-10-14T04:36:18.743860+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/restricting-service-accounts",
+    "final_url": "https://docs.cloud.google.com/organization-policy/restrict-service-accounts",
+    "status": 200,
+    "title": "Restrict IAM service account usage \u00a0|\u00a0 Organization Policy \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 22982,
+    "cache": "86fd8b8905f4092a.txt",
+    "retrieved": "2026-10-14T04:36:18.226695+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/understanding-hierarchy",
+    "final_url": "https://docs.cloud.google.com/organization-policy/hierarchy-evaluation",
+    "status": 200,
+    "title": "Hierarchy evaluation \u00a0|\u00a0 Organization Policy \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8246,
+    "cache": "a67365b7abb053d6.txt",
+    "retrieved": "2026-10-14T04:36:18.761359+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview",
+    "final_url": "https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview",
+    "status": 200,
+    "title": "Tags overview \u00a0|\u00a0 Resource Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13506,
+    "cache": "978620751f7734f8.txt",
+    "retrieved": "2026-10-14T04:36:19.291934+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/resource-manager/reference/rest/v3/organizations/getIamPolicy",
+    "final_url": "https://docs.cloud.google.com/resource-manager/reference/rest/v3/organizations/getIamPolicy",
+    "status": 200,
+    "title": "Method: organizations.getIamPolicy \u00a0|\u00a0 Resource Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2440,
+    "cache": "6f1bcc1bc99115d0.txt",
+    "retrieved": "2026-10-14T04:36:18.513102+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/run/docs/authenticating/overview",
+    "final_url": "https://docs.cloud.google.com/run/docs/authenticating/overview",
+    "status": 200,
+    "title": "Authentication overview \u00a0|\u00a0 Cloud Run \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2012,
+    "cache": "9f2513c92bc90c6b.txt",
+    "retrieved": "2026-10-14T04:36:18.619945+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/run/docs/configuring/connecting-vpc",
+    "final_url": "https://docs.cloud.google.com/run/docs/configuring/connecting-vpc",
+    "status": 200,
+    "title": "Compare Direct VPC egress and VPC connectors \u00a0|\u00a0 Cloud Run \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5062,
+    "cache": "e41501ba49515560.txt",
+    "retrieved": "2026-10-14T04:36:18.810640+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/run/docs/configuring/services/secrets",
+    "final_url": "https://docs.cloud.google.com/run/docs/configuring/services/secrets",
+    "status": 200,
+    "title": "Configure secrets for services \u00a0|\u00a0 Cloud Run \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 27162,
+    "cache": "8330fc5bd097c746.txt",
+    "retrieved": "2026-10-14T04:36:18.936135+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/run/docs/create-jobs",
+    "final_url": "https://docs.cloud.google.com/run/docs/create-jobs",
+    "status": 200,
+    "title": "Create jobs \u00a0|\u00a0 Cloud Run \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 25535,
+    "cache": "3f423b3f2007ff7d.txt",
+    "retrieved": "2026-10-14T04:36:19.392116+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/run/docs/securing/ingress",
+    "final_url": "https://docs.cloud.google.com/run/docs/securing/ingress",
+    "status": 200,
+    "title": "Restrict network endpoint ingress for Cloud Run services and instances \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16311,
+    "cache": "5fe29a4c6ee07f10.txt",
+    "retrieved": "2026-10-14T04:36:19.530560+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/scheduler/docs/http-target-auth",
+    "final_url": "https://docs.cloud.google.com/scheduler/docs/http-target-auth",
+    "status": 200,
+    "title": "Use authentication with HTTP targets \u00a0|\u00a0 Cloud Scheduler \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11392,
+    "cache": "8798119da08189e8.txt",
+    "retrieved": "2026-10-14T04:36:19.208718+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/docs/authenticate",
+    "final_url": "https://docs.cloud.google.com/sdk/docs/authenticate",
+    "status": 200,
+    "title": "Authenticate for the gcloud CLI \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 37695,
+    "cache": "7461453b301704ad.txt",
+    "retrieved": "2026-10-14T04:36:19.232224+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/docs/downloads-versioned-archives",
+    "final_url": "https://docs.cloud.google.com/sdk/docs/downloads-versioned-archives",
+    "status": 200,
+    "title": "Installing from versioned archives \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6090,
+    "cache": "eda40a06c38ae76d.txt",
+    "retrieved": "2026-10-14T04:36:20.175697+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/docs/install-sdk",
+    "final_url": "https://docs.cloud.google.com/sdk/docs/install-sdk",
+    "status": 200,
+    "title": "Quickstart: Install the Google Cloud CLI \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 24095,
+    "cache": "019c54d758cd1c49.txt",
+    "retrieved": "2026-10-14T04:36:19.637149+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/access-context-manager/perimeters/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/access-context-manager/perimeters/list",
+    "status": 200,
+    "title": "gcloud access-context-manager perimeters list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3642,
+    "cache": "072d9a7b02e7db18.txt",
+    "retrieved": "2026-10-14T04:36:19.774227+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/access-context-manager/policies/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/access-context-manager/policies/list",
+    "status": 200,
+    "title": "gcloud access-context-manager policies list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3778,
+    "cache": "5ef25fa37c9dc3a8.txt",
+    "retrieved": "2026-10-14T04:36:20.198407+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/ai/endpoints/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/ai/endpoints/list",
+    "status": 200,
+    "title": "gcloud ai endpoints list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4389,
+    "cache": "e11a294e471fa083.txt",
+    "retrieved": "2026-10-14T04:36:19.527554+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/ai/models/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/ai/models/list",
+    "status": 200,
+    "title": "gcloud ai models list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4033,
+    "cache": "37495560f679b7d9.txt",
+    "retrieved": "2026-10-14T04:36:19.843160+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/artifacts/repositories/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/artifacts/repositories/list",
+    "status": 200,
+    "title": "gcloud artifacts repositories list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5599,
+    "cache": "85ecb46a4556f7f0.txt",
+    "retrieved": "2026-10-14T04:36:19.774227+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/list",
+    "status": 200,
+    "title": "gcloud asset list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5909,
+    "cache": "71bb99279cca66f2.txt",
+    "retrieved": "2026-10-14T04:36:20.730652+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/search-all-iam-policies",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/asset/search-all-iam-policies",
+    "status": 200,
+    "title": "gcloud asset search-all-iam-policies \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 8135,
+    "cache": "9b4b78095e45718c.txt",
+    "retrieved": "2026-10-14T04:36:20.007006+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/auth/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/auth/list",
+    "status": 200,
+    "title": "gcloud auth list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3823,
+    "cache": "7163cf510b235931.txt",
+    "retrieved": "2026-10-14T04:36:19.987183+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/auth/login",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/auth/login",
+    "status": 200,
+    "title": "gcloud auth login \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7089,
+    "cache": "e1a516eee652e22e.txt",
+    "retrieved": "2026-10-14T04:36:19.965304+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/billing/budgets/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/billing/budgets/list",
+    "status": 200,
+    "title": "gcloud billing budgets list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3567,
+    "cache": "43bad45b2c3caa1b.txt",
+    "retrieved": "2026-10-14T04:36:20.096977+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/billing/projects/describe",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/billing/projects/describe",
+    "status": 200,
+    "title": "gcloud billing projects describe \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2186,
+    "cache": "8cc1d347efd53561.txt",
+    "retrieved": "2026-10-14T04:36:20.507364+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/builds/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/builds/list",
+    "status": 200,
+    "title": "gcloud builds list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3695,
+    "cache": "129204606e792f6d.txt",
+    "retrieved": "2026-10-14T04:36:20.412723+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/builds/triggers/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/builds/triggers/list",
+    "status": 200,
+    "title": "gcloud builds triggers list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3646,
+    "cache": "b593773f617134f9.txt",
+    "retrieved": "2026-10-14T04:36:20.207421+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/backend-services/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/backend-services/list",
+    "status": 200,
+    "title": "gcloud compute backend-services list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4793,
+    "cache": "e169fcf23863382e.txt",
+    "retrieved": "2026-10-14T04:36:21.098211+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/disks/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/disks/list",
+    "status": 200,
+    "title": "gcloud compute disks list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4784,
+    "cache": "fbe6c577305c23c6.txt",
+    "retrieved": "2026-10-14T04:36:20.953164+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/firewall-policies/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/firewall-policies/list",
+    "status": 200,
+    "title": "gcloud compute firewall-policies list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4537,
+    "cache": "bfb2e25c9059043f.txt",
+    "retrieved": "2026-10-14T04:36:20.639744+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/firewall-rules/list",
+    "status": 200,
+    "title": "gcloud compute firewall-rules list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4525,
+    "cache": "57189bff8b8f5c8e.txt",
+    "retrieved": "2026-10-14T04:36:21.156675+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/forwarding-rules/list",
+    "status": 200,
+    "title": "gcloud compute forwarding-rules list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4793,
+    "cache": "5dc936f8c6f01ccb.txt",
+    "retrieved": "2026-10-14T04:36:20.831804+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/images/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/images/list",
+    "status": 200,
+    "title": "gcloud compute images list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4839,
+    "cache": "8ddeb74eca51cae1.txt",
+    "retrieved": "2026-10-14T04:36:21.462488+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/instances/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/instances/list",
+    "status": 200,
+    "title": "gcloud compute instances list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4404,
+    "cache": "399ed56b01fe9b3c.txt",
+    "retrieved": "2026-10-14T04:36:20.666319+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/interconnects/attachments/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/interconnects/attachments/list",
+    "status": 200,
+    "title": "gcloud compute interconnects attachments list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4001,
+    "cache": "d3171af04de28953.txt",
+    "retrieved": "2026-10-14T04:36:21.158661+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/networks/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/networks/list",
+    "status": 200,
+    "title": "gcloud compute networks list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3943,
+    "cache": "46280a3851d0b9c1.txt",
+    "retrieved": "2026-10-14T04:36:20.958189+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/networks/subnets/list",
+    "status": 200,
+    "title": "gcloud compute networks subnets list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4826,
+    "cache": "cf171c20e29dd4a7.txt",
+    "retrieved": "2026-10-14T04:36:21.022659+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/project-info/describe",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/project-info/describe",
+    "status": 200,
+    "title": "gcloud compute project-info describe \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 1910,
+    "cache": "cb593d951f537f72.txt",
+    "retrieved": "2026-10-14T04:36:21.041901+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/resource-policies/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/resource-policies/list",
+    "status": 200,
+    "title": "gcloud compute resource-policies list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3879,
+    "cache": "31735e34d748434e.txt",
+    "retrieved": "2026-10-14T04:36:21.390588+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/routers/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/routers/list",
+    "status": 200,
+    "title": "gcloud compute routers list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4343,
+    "cache": "35c17f4c373932e3.txt",
+    "retrieved": "2026-10-14T04:36:21.404935+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/routes/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/routes/list",
+    "status": 200,
+    "title": "gcloud compute routes list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4230,
+    "cache": "34894afdfaedc5c7.txt",
+    "retrieved": "2026-10-14T04:36:21.790268+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/security-policies/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/security-policies/list",
+    "status": 200,
+    "title": "gcloud compute security-policies list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4341,
+    "cache": "293f2c224981920f.txt",
+    "retrieved": "2026-10-14T04:36:21.567335+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/snapshots/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/snapshots/list",
+    "status": 200,
+    "title": "gcloud compute snapshots list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3956,
+    "cache": "9981f266445acab8.txt",
+    "retrieved": "2026-10-14T04:36:21.673610+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/vpn-tunnels/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/compute/vpn-tunnels/list",
+    "status": 200,
+    "title": "gcloud compute vpn-tunnels list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4407,
+    "cache": "2595f168d1f520dc.txt",
+    "retrieved": "2026-10-14T04:36:21.978966+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/container/binauthz/policy/export",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/container/binauthz/policy/export",
+    "status": 200,
+    "title": "gcloud container binauthz policy export \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2019,
+    "cache": "b97bad8ad323280b.txt",
+    "retrieved": "2026-10-14T04:36:21.428472+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/container/clusters/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/container/clusters/list",
+    "status": 200,
+    "title": "gcloud container clusters list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4100,
+    "cache": "18433e3cf8df3aa1.txt",
+    "retrieved": "2026-10-14T04:36:21.817569+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/deploy/delivery-pipelines/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/deploy/delivery-pipelines/list",
+    "status": 200,
+    "title": "gcloud deploy delivery-pipelines list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4201,
+    "cache": "79566201faff162e.txt",
+    "retrieved": "2026-10-14T04:36:21.853888+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/dns/managed-zones/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/dns/managed-zones/list",
+    "status": 200,
+    "title": "gcloud dns managed-zones list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3746,
+    "cache": "f20db029f849205e.txt",
+    "retrieved": "2026-10-14T04:36:22.090910+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/functions/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/functions/list",
+    "status": 200,
+    "title": "gcloud functions list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3674,
+    "cache": "bff540c1046d0aa1.txt",
+    "retrieved": "2026-10-14T04:36:21.756128+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/roles/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/roles/list",
+    "status": 200,
+    "title": "gcloud iam roles list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3872,
+    "cache": "363aedf338cc3f25.txt",
+    "retrieved": "2026-10-14T04:36:22.375769+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/service-accounts/keys/list",
+    "status": 200,
+    "title": "gcloud iam service-accounts keys list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3855,
+    "cache": "08a0a3b6e7608995.txt",
+    "retrieved": "2026-10-14T04:36:22.172096+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/service-accounts/list",
+    "status": 200,
+    "title": "gcloud iam service-accounts list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2963,
+    "cache": "c3c13579d1b9ea6a.txt",
+    "retrieved": "2026-10-14T04:36:22.536261+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/workload-identity-pools/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/workload-identity-pools/list",
+    "status": 200,
+    "title": "gcloud iam workload-identity-pools list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3989,
+    "cache": "7731b7d7958c1c92.txt",
+    "retrieved": "2026-10-14T04:36:22.574464+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/workload-identity-pools/providers/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/iam/workload-identity-pools/providers/list",
+    "status": 200,
+    "title": "gcloud iam workload-identity-pools providers list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4680,
+    "cache": "843fad0f783c9ba5.txt",
+    "retrieved": "2026-10-14T04:36:22.379339+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/kms/keyrings/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/kms/keyrings/list",
+    "status": 200,
+    "title": "gcloud kms keyrings list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3868,
+    "cache": "0a8dbac0b5c6958b.txt",
+    "retrieved": "2026-10-14T04:36:22.574464+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/kms/keys/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/kms/keys/list",
+    "status": 200,
+    "title": "gcloud kms keys list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4250,
+    "cache": "6998d1f5bfbe9fca.txt",
+    "retrieved": "2026-10-14T04:36:22.264127+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/buckets/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/buckets/list",
+    "status": 200,
+    "title": "gcloud logging buckets list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4391,
+    "cache": "8a267677b7f2e9e0.txt",
+    "retrieved": "2026-10-14T04:36:22.151501+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/metrics/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/metrics/list",
+    "status": 200,
+    "title": "gcloud logging metrics list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2631,
+    "cache": "b4c3f28e6e0e9466.txt",
+    "retrieved": "2026-10-14T04:36:22.668449+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/read",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/read",
+    "status": 200,
+    "title": "gcloud logging read \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 6885,
+    "cache": "f28832f8592709ae.txt",
+    "retrieved": "2026-10-14T04:36:22.447815+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/sinks/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/logging/sinks/list",
+    "status": 200,
+    "title": "gcloud logging sinks list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3861,
+    "cache": "045bccfd21e925bf.txt",
+    "retrieved": "2026-10-14T04:36:22.677449+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/org-policies/describe",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/org-policies/describe",
+    "status": 200,
+    "title": "gcloud org-policies describe \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2398,
+    "cache": "ce597d009d012af3.txt",
+    "retrieved": "2026-10-14T04:36:23.033202+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/org-policies/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/org-policies/list",
+    "status": 200,
+    "title": "gcloud org-policies list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3664,
+    "cache": "cd6a4220a76a1bdb.txt",
+    "retrieved": "2026-10-14T04:36:22.936923+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/organizations/get-iam-policy",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/organizations/get-iam-policy",
+    "status": 200,
+    "title": "gcloud organizations get-iam-policy \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3528,
+    "cache": "1ddb8c14c5c29f54.txt",
+    "retrieved": "2026-10-14T04:36:22.994561+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/describe",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/describe",
+    "status": 200,
+    "title": "gcloud projects describe \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2028,
+    "cache": "5da4f5546ddef176.txt",
+    "retrieved": "2026-10-14T04:36:23.220993+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/get-ancestors",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/get-ancestors",
+    "status": 200,
+    "title": "gcloud projects get-ancestors \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 2391,
+    "cache": "4a15b9ea0c3bf195.txt",
+    "retrieved": "2026-10-14T04:36:23.713478+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/get-iam-policy",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/projects/get-iam-policy",
+    "status": 200,
+    "title": "gcloud projects get-iam-policy \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3209,
+    "cache": "d05712cada9b38e0.txt",
+    "retrieved": "2026-10-14T04:36:22.853353+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/pubsub/subscriptions/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/pubsub/subscriptions/list",
+    "status": 200,
+    "title": "gcloud pubsub subscriptions list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3245,
+    "cache": "8560d901e8317476.txt",
+    "retrieved": "2026-10-14T04:36:23.579011+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/pubsub/topics/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/pubsub/topics/list",
+    "status": 200,
+    "title": "gcloud pubsub topics list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3670,
+    "cache": "8e44553db17a8ad4.txt",
+    "retrieved": "2026-10-14T04:36:23.267130+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/redis/instances/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/redis/instances/list",
+    "status": 200,
+    "title": "gcloud redis instances list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4174,
+    "cache": "579fb187a2e834a8.txt",
+    "retrieved": "2026-10-14T04:36:23.212466+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/resource-manager/folders/get-iam-policy",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/resource-manager/folders/get-iam-policy",
+    "status": 200,
+    "title": "gcloud resource-manager folders get-iam-policy \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3246,
+    "cache": "30fa8225aeb0bff4.txt",
+    "retrieved": "2026-10-14T04:36:23.568590+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/run/jobs/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/run/jobs/list",
+    "status": 200,
+    "title": "gcloud run jobs list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3294,
+    "cache": "d4aff02db3b24ab9.txt",
+    "retrieved": "2026-10-14T04:36:23.374427+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/run/services/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/run/services/list",
+    "status": 200,
+    "title": "gcloud run services list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3341,
+    "cache": "e14322e7e671403e.txt",
+    "retrieved": "2026-10-14T04:36:23.753178+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/scc/findings/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/scc/findings/list",
+    "status": 200,
+    "title": "gcloud scc findings list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 9875,
+    "cache": "e8bb2f92845aa5e6.txt",
+    "retrieved": "2026-10-14T04:36:23.603282+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/scheduler/jobs/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/scheduler/jobs/list",
+    "status": 200,
+    "title": "gcloud scheduler jobs list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4122,
+    "cache": "62527e26466893e5.txt",
+    "retrieved": "2026-10-14T04:36:25.964594+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/secrets/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/secrets/list",
+    "status": 200,
+    "title": "gcloud secrets list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3821,
+    "cache": "264cc1add22d441b.txt",
+    "retrieved": "2026-10-14T04:36:24.148765+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/secrets/versions/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/secrets/versions/list",
+    "status": 200,
+    "title": "gcloud secrets versions list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4393,
+    "cache": "1170ef20ce800466.txt",
+    "retrieved": "2026-10-14T04:36:24.592689+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/services/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/services/list",
+    "status": 200,
+    "title": "gcloud services list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3791,
+    "cache": "8b0f5967f2d800f8.txt",
+    "retrieved": "2026-10-14T04:36:24.445827+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/spanner/instances/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/spanner/instances/list",
+    "status": 200,
+    "title": "gcloud spanner instances list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3316,
+    "cache": "4e50a74b0903b1e6.txt",
+    "retrieved": "2026-10-14T04:36:24.418339+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/sql/backups/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/sql/backups/list",
+    "status": 200,
+    "title": "gcloud sql backups list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3437,
+    "cache": "3397fdfa295f1f8f.txt",
+    "retrieved": "2026-10-14T04:36:25.602709+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/sql/instances/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/sql/instances/list",
+    "status": 200,
+    "title": "gcloud sql instances list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3825,
+    "cache": "af3d617e132f8a5e.txt",
+    "retrieved": "2026-10-14T04:36:24.169513+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/storage/buckets/list",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/storage/buckets/list",
+    "status": 200,
+    "title": "gcloud storage buckets list \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3897,
+    "cache": "2750d6bd6a5be3a6.txt",
+    "retrieved": "2026-10-14T04:36:24.247167+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sdk/gcloud/reference/topic/startup",
+    "final_url": "https://docs.cloud.google.com/sdk/gcloud/reference/topic/startup",
+    "status": 200,
+    "title": "gcloud topic startup \u00a0|\u00a0 Google Cloud SDK \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3875,
+    "cache": "3c50dcd8516b36fb.txt",
+    "retrieved": "2026-10-14T04:36:24.375879+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/secret-manager/docs/access-control",
+    "final_url": "https://docs.cloud.google.com/secret-manager/docs/access-control",
+    "status": 200,
+    "title": "Access control with IAM \u00a0|\u00a0 Secret Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7981,
+    "cache": "1c2c3bcc9a91f06d.txt",
+    "retrieved": "2026-10-14T04:36:24.531547+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/secret-manager/docs/best-practices",
+    "final_url": "https://docs.cloud.google.com/secret-manager/docs/best-practices",
+    "status": 200,
+    "title": "Secret Manager best practices \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7408,
+    "cache": "67e01a4c0e546121.txt",
+    "retrieved": "2026-10-14T04:36:25.436439+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/secret-manager/docs/rotation-recommendations",
+    "final_url": "https://docs.cloud.google.com/secret-manager/docs/rotation-recommendations",
+    "status": 200,
+    "title": "About rotation schedules \u00a0|\u00a0 Secret Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10079,
+    "cache": "dd6e7617de583b0c.txt",
+    "retrieved": "2026-10-14T04:36:24.542546+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/secret-manager/docs/view-secret-version",
+    "final_url": "https://docs.cloud.google.com/secret-manager/docs/view-secret-version",
+    "status": 200,
+    "title": "View secret version details \u00a0|\u00a0 Secret Manager \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 23733,
+    "cache": "a900099d35e6c92f.txt",
+    "retrieved": "2026-10-14T04:36:24.896740+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview",
+    "final_url": "https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview",
+    "status": 200,
+    "title": "Overview of Event Threat Detection \u00a0|\u00a0 Security Command Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 102424,
+    "cache": "28ddd98af9de25e6.txt",
+    "retrieved": "2026-10-14T04:36:24.935660+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security-command-center/docs/how-to-mute-findings",
+    "final_url": "https://docs.cloud.google.com/security-command-center/docs/how-to-mute-findings",
+    "status": 200,
+    "title": "Mute findings in Security Command Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11165,
+    "cache": "d88ddc658eb335a7.txt",
+    "retrieved": "2026-10-14T04:36:25.345015+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security-command-center/docs/review-manage-findings",
+    "final_url": "https://docs.cloud.google.com/security-command-center/docs/review-manage-findings",
+    "status": 200,
+    "title": "Review and manage findings \u00a0|\u00a0 Security Command Center \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 23140,
+    "cache": "7ec28e4adf901de8.txt",
+    "retrieved": "2026-10-14T04:36:26.496898+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security-command-center/docs/security-command-center-overview",
+    "final_url": "https://docs.cloud.google.com/security-command-center/docs/security-command-center-overview",
+    "status": 200,
+    "title": "Security Command Center overview \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4452,
+    "cache": "57658795acab7c5c.txt",
+    "retrieved": "2026-10-14T04:36:24.897738+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security-command-center/docs/service-tiers",
+    "final_url": "https://docs.cloud.google.com/security-command-center/docs/service-tiers",
+    "status": 200,
+    "title": "Security Command Center service tiers \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16306,
+    "cache": "b0e20b6e1a854980.txt",
+    "retrieved": "2026-10-14T04:36:24.939917+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security/compliance/gdpr",
+    "final_url": "https://cloud.google.com/privacy/gdpr",
+    "status": 200,
+    "title": "GDPR and Google Cloud | Google Cloud",
+    "text_chars": 66877,
+    "cache": "43eb573b86d27061.txt",
+    "retrieved": "2026-10-14T04:36:25.821427+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/security/compliance/overview",
+    "final_url": "https://cloud.google.com/security/compliance/overview",
+    "status": 200,
+    "title": "<!-- \"> '> --><title>",
+    "text_chars": 132,
+    "cache": "d19818c2cda2b53f.txt",
+    "retrieved": "2026-10-14T04:36:25.334532+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sensitive-data-protection/docs/data-profiles",
+    "final_url": "https://docs.cloud.google.com/sensitive-data-protection/docs/data-profiles",
+    "status": 200,
+    "title": "Overview of sensitive data discovery \u00a0|\u00a0 Sensitive Data Protection \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 35655,
+    "cache": "b30523e209456412.txt",
+    "retrieved": "2026-10-14T04:36:25.647098+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/spanner/docs/security-privacy-compliance",
+    "final_url": "https://docs.cloud.google.com/spanner/docs/security-privacy-compliance",
+    "status": 200,
+    "title": "Security, privacy, risk, and compliance for Spanner \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11431,
+    "cache": "137ed9800b7a749a.txt",
+    "retrieved": "2026-10-14T04:36:25.825428+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sql/docs/postgres/authorize-networks",
+    "final_url": "https://docs.cloud.google.com/sql/docs/postgres/authorize-networks",
+    "status": 200,
+    "title": "Authorize with authorized networks \u00a0|\u00a0 Cloud SQL for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 11673,
+    "cache": "8ca191b35c71de88.txt",
+    "retrieved": "2026-10-14T04:36:25.658249+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups",
+    "final_url": "https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/backups",
+    "status": 200,
+    "title": "Cloud SQL backups overview \u00a0|\u00a0 Cloud SQL for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18804,
+    "cache": "da334d9b49a010f2.txt",
+    "retrieved": "2026-10-14T04:36:25.950051+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restoring",
+    "final_url": "https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/restoring",
+    "status": 200,
+    "title": "Restore an instance using a backup \u00a0|\u00a0 Cloud SQL for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 92056,
+    "cache": "5c1aeb799936965e.txt",
+    "retrieved": "2026-10-14T04:36:26.217043+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sql/docs/postgres/configure-ssl-instance",
+    "final_url": "https://docs.cloud.google.com/sql/docs/postgres/configure-ssl-instance",
+    "status": 200,
+    "title": "Configure SSL/TLS certificates \u00a0|\u00a0 Cloud SQL for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 34702,
+    "cache": "420990bca613f6e9.txt",
+    "retrieved": "2026-10-14T04:36:26.893425+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sql/docs/postgres/high-availability",
+    "final_url": "https://docs.cloud.google.com/sql/docs/postgres/high-availability",
+    "status": 200,
+    "title": "About high availability \u00a0|\u00a0 Cloud SQL for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10238,
+    "cache": "eed27201ecf8d008.txt",
+    "retrieved": "2026-10-14T04:36:26.703734+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/sql/docs/postgres/iam-authentication",
+    "final_url": "https://docs.cloud.google.com/sql/docs/postgres/iam-authentication",
+    "status": 200,
+    "title": "IAM authentication \u00a0|\u00a0 Cloud SQL for PostgreSQL \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18984,
+    "cache": "b13c6dc1dd228211.txt",
+    "retrieved": "2026-10-14T04:36:26.460022+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage-transfer/docs/overview",
+    "final_url": "https://docs.cloud.google.com/storage-transfer/docs/overview",
+    "status": 200,
+    "title": "Storage Transfer Service \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3473,
+    "cache": "69dc10ab13c4eeec.txt",
+    "retrieved": "2026-10-14T04:36:26.003741+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/access-control/signed-urls",
+    "final_url": "https://docs.cloud.google.com/storage/docs/access-control/signed-urls",
+    "status": 200,
+    "title": "Signed URLs \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7571,
+    "cache": "f0e50620cb0f9412.txt",
+    "retrieved": "2026-10-14T04:36:26.126063+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/audit-logging",
+    "final_url": "https://docs.cloud.google.com/storage/docs/audit-logging",
+    "status": 200,
+    "title": "Cloud Audit Logs with Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 23553,
+    "cache": "d81083995f8822fb.txt",
+    "retrieved": "2026-10-14T04:36:26.296440+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/bucket-lock",
+    "final_url": "https://docs.cloud.google.com/storage/docs/bucket-lock",
+    "status": 200,
+    "title": "Bucket Lock \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10053,
+    "cache": "f42dfc05ab714712.txt",
+    "retrieved": "2026-10-14T04:36:26.839285+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/encryption/customer-managed-keys",
+    "final_url": "https://docs.cloud.google.com/storage/docs/encryption/customer-managed-keys",
+    "status": 200,
+    "title": "Customer-managed encryption keys \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 12865,
+    "cache": "abd7f559ae6536d0.txt",
+    "retrieved": "2026-10-14T04:36:26.997462+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/lifecycle",
+    "final_url": "https://docs.cloud.google.com/storage/docs/lifecycle",
+    "status": 200,
+    "title": "Object Lifecycle Management \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 23191,
+    "cache": "167d0d5f3df60951.txt",
+    "retrieved": "2026-10-14T04:36:26.663923+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/locations",
+    "final_url": "https://docs.cloud.google.com/storage/docs/locations",
+    "status": 200,
+    "title": "Bucket locations \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 15481,
+    "cache": "d3589df0f542c35c.txt",
+    "retrieved": "2026-10-14T04:36:26.801542+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/managed-folders",
+    "final_url": "https://docs.cloud.google.com/storage/docs/managed-folders",
+    "status": 200,
+    "title": "Managed folders \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 5325,
+    "cache": "78bea05fb1026a11.txt",
+    "retrieved": "2026-10-14T04:36:26.703734+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/public-access-prevention",
+    "final_url": "https://docs.cloud.google.com/storage/docs/public-access-prevention",
+    "status": 200,
+    "title": "Public access prevention \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10071,
+    "cache": "b9d61cebffa0e278.txt",
+    "retrieved": "2026-10-14T04:36:26.636422+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/soft-delete",
+    "final_url": "https://docs.cloud.google.com/storage/docs/soft-delete",
+    "status": 200,
+    "title": "Soft delete overview \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13349,
+    "cache": "c345f917d13f63a0.txt",
+    "retrieved": "2026-10-14T04:36:27.239229+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access",
+    "final_url": "https://docs.cloud.google.com/storage/docs/uniform-bucket-level-access",
+    "status": 200,
+    "title": "Uniform bucket-level access \u00a0|\u00a0 Cloud Storage \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 10519,
+    "cache": "42c2205b073827bd.txt",
+    "retrieved": "2026-10-14T04:36:27.739410+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/docs/general/access-control",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/access-control",
+    "status": 200,
+    "title": "Agent Platform access control with IAM \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 228638,
+    "cache": "2d167047ef5894a3.txt",
+    "retrieved": "2026-10-14T04:36:28.505715+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/docs/general/vpc-service-controls",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/vpc-service-controls",
+    "status": 200,
+    "title": "VPC Service Controls with Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16029,
+    "cache": "e70a7c3f331eb1ba.txt",
+    "retrieved": "2026-10-14T04:36:27.696593+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/docs/start/introduction-unified-platform",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning",
+    "status": 200,
+    "title": "Introduction to machine learning on Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3099,
+    "cache": "82a231bc94e9c5d7.txt",
+    "retrieved": "2026-10-14T04:36:28.832924+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/overview",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale",
+    "status": 200,
+    "title": "Scale your agents \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 7718,
+    "cache": "f587c85e947f601b.txt",
+    "retrieved": "2026-10-14T04:36:27.991688+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/data-governance",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+    "status": 200,
+    "title": "Gemini Enterprise Agent Platform and zero data retention \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16127,
+    "cache": "4441be89ce5fdfd7.txt",
+    "retrieved": "2026-10-14T04:36:29.010229+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/evaluation-overview",
+    "status": 200,
+    "title": "Gen AI evaluation service overview \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13999,
+    "cache": "ce41a0aec6fab21b.txt",
+    "retrieved": "2026-10-14T04:36:28.032383+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/multimodal/configure-safety-filters",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/configure-safety-filters",
+    "status": 200,
+    "title": "Safety and content filters \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 33888,
+    "cache": "ea47567b7c798993.txt",
+    "retrieved": "2026-10-14T04:36:27.977369+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/overview",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models",
+    "status": 200,
+    "title": "Overview of models on Agent Platform \u00a0|\u00a0 Gemini Enterprise Agent Platform \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 4349,
+    "cache": "05ae6e3be2b66210.txt",
+    "retrieved": "2026-10-14T04:36:27.985707+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/vertex-ai-zero-data-retention",
+    "final_url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention",
+    "status": 200,
+    "title": "Gemini Enterprise Agent Platform and zero data retention \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 16127,
+    "cache": "aca49e489b520eaf.txt",
+    "retrieved": "2026-10-14T04:36:28.553121+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc-service-controls/docs/ingress-egress-rules",
+    "final_url": "https://docs.cloud.google.com/vpc-service-controls/docs/ingress-egress-rules",
+    "status": 200,
+    "title": "Ingress and egress rules \u00a0|\u00a0 VPC Service Controls \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 27256,
+    "cache": "938191b6b79f460b.txt",
+    "retrieved": "2026-10-14T04:36:28.814788+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc-service-controls/docs/overview",
+    "final_url": "https://docs.cloud.google.com/vpc-service-controls/docs/overview",
+    "status": 200,
+    "title": "Overview of VPC Service Controls \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 18857,
+    "cache": "dccee513e929beed.txt",
+    "retrieved": "2026-10-14T04:36:28.677835+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc/docs/flow-logs",
+    "final_url": "https://docs.cloud.google.com/vpc/docs/flow-logs",
+    "status": 200,
+    "title": "VPC Flow Logs \u00a0|\u00a0 Virtual Private Cloud \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 13350,
+    "cache": "a734da6dbacb5e50.txt",
+    "retrieved": "2026-10-14T04:36:29.319910+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc/docs/private-google-access",
+    "final_url": "https://docs.cloud.google.com/vpc/docs/private-google-access",
+    "status": 200,
+    "title": "Private Google Access \u00a0|\u00a0 Virtual Private Cloud \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 3774,
+    "cache": "0dc177fcadcc88a3.txt",
+    "retrieved": "2026-10-14T04:36:28.998049+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+    "final_url": "https://docs.cloud.google.com/vpc/docs/private-service-connect",
+    "status": 200,
+    "title": "Private Service Connect \u00a0|\u00a0 Virtual Private Cloud \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 12986,
+    "cache": "45c4d1af729c2d26.txt",
+    "retrieved": "2026-10-14T04:36:28.667150+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc/docs/shared-vpc",
+    "final_url": "https://docs.cloud.google.com/vpc/docs/shared-vpc",
+    "status": 200,
+    "title": "Shared VPC \u00a0|\u00a0 Virtual Private Cloud \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 29334,
+    "cache": "fa6bc213168fe33a.txt",
+    "retrieved": "2026-10-14T04:36:28.677835+00:00"
+  },
+  {
+    "url": "https://docs.cloud.google.com/vpc/docs/vpc-peering",
+    "final_url": "https://docs.cloud.google.com/vpc/docs/vpc-peering",
+    "status": 200,
+    "title": "VPC Network Peering \u00a0|\u00a0 Virtual Private Cloud \u00a0|\u00a0 Google Cloud Documentation",
+    "text_chars": 29973,
+    "cache": "6214d6c09061341e.txt",
+    "retrieved": "2026-10-14T04:36:30.937614+00:00"
+  },
+  {
+    "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "final_url": "https://owasp.org/projects/top-10-for-large-language-model-applications",
+    "status": 200,
+    "title": "OWASP Top 10 for Large Language Model Applications | OWASP Foundation",
+    "text_chars": 4563,
+    "cache": "1c17a7f3d0bba6f0.txt",
+    "retrieved": "2026-10-14T04:36:28.951887+00:00"
+  },
+  {
+    "url": "https://sre.google/sre-book/table-of-contents/",
+    "final_url": "https://sre.google/sre-book/table-of-contents/",
+    "status": 200,
+    "title": "Google SRE - Site reliability engineering book Google index",
+    "text_chars": 3532,
+    "cache": "2c477f1b3c560108.txt",
+    "retrieved": "2026-10-14T04:36:28.795755+00:00"
+  },
+  {
+    "url": "https://support.google.com/a/answer/9176657",
+    "final_url": "https://knowledge.workspace.google.com/admin/security/deploy-2-step-verification?visit_id=639275493904557850-2057527892&rd=1",
+    "status": 200,
+    "title": "Deploy 2-Step Verification \u00a0|\u00a0 Security & data protection \u00a0|\u00a0 Google Workspace Help",
+    "text_chars": 9361,
+    "cache": "4c58050a0ab8bab7.txt",
+    "retrieved": "2026-10-14T04:36:29.117502+00:00"
+  },
+  {
+    "url": "https://www.cisecurity.org/benchmark/google_cloud_computing_platform",
+    "final_url": "https://www.cisecurity.org/benchmark/google_cloud_computing_platform",
+    "status": 200,
+    "title": "CIS Google Cloud Computing Platform Benchmarks",
+    "text_chars": 2178,
+    "cache": "52ca70750a8ca8bf.txt",
+    "retrieved": "2026-10-14T04:36:29.076346+00:00"
+  }
+]

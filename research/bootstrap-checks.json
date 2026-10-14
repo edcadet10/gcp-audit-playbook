@@ -1,0 +1,61 @@
+{
+  "checked": "2026-10-14T04:39:11.758208+00:00",
+  "archives": [
+    {
+      "platform": [
+        "Windows",
+        "x86_64"
+      ],
+      "version": "589.0.0",
+      "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-589.0.0-windows-x86_64-bundled-python.zip",
+      "status": 200,
+      "bytes": "103702694",
+      "sha256": "b9c2f4f296154f55e8a31a6979106573bc1ad8691041d4a32ea90c1834fdf995"
+    },
+    {
+      "platform": [
+        "Linux",
+        "x86_64"
+      ],
+      "version": "589.0.0",
+      "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-589.0.0-linux-x86_64.tar.gz",
+      "status": 200,
+      "bytes": "93451089",
+      "sha256": "817026aec0adea0e2ee8ed3a1ba3eabfe9e5177581fbe16595a8fe495a601300"
+    },
+    {
+      "platform": [
+        "Linux",
+        "arm64"
+      ],
+      "version": "589.0.0",
+      "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-589.0.0-linux-arm.tar.gz",
+      "status": 200,
+      "bytes": "54098620",
+      "sha256": "c7b9abef0649e0fccc70bf2aaaa031a0aa6202863e45fabe938698dc93d4934c"
+    },
+    {
+      "platform": [
+        "Darwin",
+        "x86_64"
+      ],
+      "version": "589.0.0",
+      "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-589.0.0-darwin-x86_64.tar.gz",
+      "status": 200,
+      "bytes": "54268184",
+      "sha256": "b49e8cb9d348267d46fade7b9c916a1aed7ce0ec07e142ce41cc0d24a95a9651"
+    },
+    {
+      "platform": [
+        "Darwin",
+        "arm64"
+      ],
+      "version": "589.0.0",
+      "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-589.0.0-darwin-arm.tar.gz",
+      "status": 200,
+      "bytes": "54172111",
+      "sha256": "71b37ca07ab0f9bc43898e42c913e10f143166230ab31e0bbea3632dbc77b010"
+    }
+  ],
+  "limitation": "Availability and recorded hashes only; installation not exercised on these platforms."
+}

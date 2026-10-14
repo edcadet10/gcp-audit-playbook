@@ -1,0 +1,21 @@
+{
+  "organization": "123456789012",
+  "account": "auditor@example.com",
+  "projects": ["example-prod-123"],
+  "organization_reads": false,
+  "billing_accounts": [],
+  "regions": ["us-central1"],
+  "locations": ["global", "us-central1"],
+  "scc_locations": ["global"],
+  "constraints": [
+    "iam.disableServiceAccountKeyCreation",
+    "iam.disableServiceAccountKeyUpload",
+    "iam.automaticIamGrantsForDefaultServiceAccounts",
+    "storage.publicAccessPrevention",
+    "storage.uniformBucketLevelAccess",
+    "gcp.resourceLocations"
+  ],
+  "start": "2026-09-01T00:00:00Z",
+  "end": "2026-10-01T00:00:00Z",
+  "log_limit": 1000
+}
